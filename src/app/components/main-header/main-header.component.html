@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+  <img id="titleIcon" src="../assets/images/iriss_logo.png"/>
+  <button mat-button   routerLink="/mapa" routerLinkActive="active">Mapa</button>
+  <button mat-button   routerLink="/usuarios" routerLinkActive="active"> Usuarios</button>   <!--  *ngIf="getPermission()"  para control de usuario -->
+  <button mat-button   routerLink="/nodos" routerLinkActive="active"> Nodos</button>    <!--  *ngIf="getPermission()" para control de usuario -->
+  <span class="example-spacer"></span>
+  <app-menu></app-menu>
+</mat-toolbar>
+<mat-toolbar color="primary" class="toolbar-space">  </mat-toolbar>   <!--  esto le da la segunda capa de ancho  -->

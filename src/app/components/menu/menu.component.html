@@ -1,0 +1,12 @@
+<button mat-icon-button matMenuTriggerFor [matMenuTriggerFor]="menu">
+  <mat-icon *ngIf="loggedIn">sentiment_very_satisfied</mat-icon> <!-- more_vert  sentiment_very_satisfied-->
+  <mat-icon *ngIf="!loggedIn">person</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+<button *ngIf="loggedIn" mat-menu-item (click)="disconnect()"> Desconectarse </button>
+<button *ngIf="!loggedIn" mat-menu-item (click)="openDialog()"> <!-- loginmodal.open()-->
+  <span>Conectarse</span>
+</button>
+<button mat-menu-item (click)="funcion1()"> funcion 1 </button>
+<button mat-menu-item (click)="funcion12()"> funcion 2 </button>
+</mat-menu>
