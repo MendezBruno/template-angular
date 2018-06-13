@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ArrayVistas } from '../../model/data/vistas';
 
 @Component({
   selector: 'app-principal',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrincipalComponent implements OnInit {
 
-  constructor() { }
+  links = ArrayVistas;
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  goto(link) {
+    this.router.navigate([link]);
+  }
 }

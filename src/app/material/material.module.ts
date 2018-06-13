@@ -1,54 +1,77 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatToolbarModule,
-         MatDialogModule,
-         MatMenuModule,
-         MatIconModule,
-         MatCardModule,
-         MatButtonModule,
+import {
+         // Forms
+         MatFormFieldModule,
          MatInputModule,
          MatSelectModule,
-         MatChipsModule,
-         MatSidenavModule,
          MatSlideToggleModule,
-         MatButtonToggleModule
+         // Navigation
+         MatToolbarModule,
+         MatMenuModule,
+         MatSidenavModule,
+         // Layouts
+         MatCardModule,
+         MatGridListModule,
+         MatListModule,
+         // Buttons & Indicators
+         MatIconModule,
+         MatButtonModule,
+         MatChipsModule,
+         MatButtonToggleModule,
+         // Popups & Modals
+         MatDialogModule,
+
          } from '@angular/material';
 
 
 @NgModule({
   imports: [
     CommonModule,
-    FlexLayoutModule,
-    MatToolbarModule,
-    MatDialogModule,
-    MatMenuModule,
-    MatIconModule,
-    MatCardModule,
-    MatButtonModule,
+    // Forms
+    MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    MatChipsModule,
-    MatSidenavModule,
     MatSlideToggleModule,
-    MatButtonToggleModule
+    // Navigation
+    MatToolbarModule,
+    MatMenuModule,
+    MatSidenavModule,
+    // Layouts
+    MatCardModule,
+    MatGridListModule,
+    MatListModule,
+    // Buttons & Indicators
+    MatIconModule,
+    MatButtonModule,
+    MatChipsModule,
+    MatButtonToggleModule,
+    // Popups & Modals
+    MatDialogModule,
 
   ],
   exports: [
     CommonModule,
-    FlexLayoutModule,
-    MatToolbarModule,
-    MatDialogModule,
-    MatMenuModule,
-    MatIconModule,
-    MatCardModule,
-    MatButtonModule,
+    // Forms
+    MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    MatChipsModule,
-    MatSidenavModule,
     MatSlideToggleModule,
-    MatButtonToggleModule
+    // Navigation
+    MatToolbarModule,
+    MatMenuModule,
+    MatSidenavModule,
+    // Layouts
+    MatCardModule,
+    MatGridListModule,
+    MatListModule,
+    // Buttons & Indicators
+    MatIconModule,
+    MatButtonModule,
+    MatChipsModule,
+    MatButtonToggleModule,
+    // Popups & Modals
+    MatDialogModule,
 ]
 })
 export class MaterialModule { }
