@@ -10,6 +10,8 @@ export class UserComponent implements OnInit {
   nuevoUsuario: any = {};
   constructor() { }
 
+
+
   ngOnInit() {
   }
 
@@ -20,3 +22,4 @@ export class UserComponent implements OnInit {
   }
 
 }
+

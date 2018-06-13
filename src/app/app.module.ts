@@ -24,6 +24,8 @@ import { LoginAdminComponent } from './vistas/logins/login-admin/login-admin.com
 import { CarnesLaColoradaComponent } from './vistas/principales/carnes-la-colorada/carnes-la-colorada.component';
 import { FutbolHoyComponent } from './vistas/principales/futbol-hoy/futbol-hoy.component';
 import { FutbolRocolaComponent } from './vistas/principales/futbol-rocola/futbol-rocola.component';
+import { TurnosComponent } from './vistas/forms/turnos/turnos.component';
+import { CarruselComponent } from './components/carrusel/carrusel.component';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { FutbolRocolaComponent } from './vistas/principales/futbol-rocola/futbol
     LoginAdminComponent,
     CarnesLaColoradaComponent,
     FutbolHoyComponent,
-    FutbolRocolaComponent
+    FutbolRocolaComponent,
+    TurnosComponent,
+    CarruselComponent
   ],
   imports: [
     BrowserModule,
