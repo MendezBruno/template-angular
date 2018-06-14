@@ -1,0 +1,23 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+.stick {
+    position:fixed;
+    top:10px;
+    z-index: 10000;
+}
+
+.flotante {
+    display:scroll;
+    align-content: center;
+        position:fixed;
+        bottom:40px;
+        right:100px;
+        z-index: 10000;
+       
+}

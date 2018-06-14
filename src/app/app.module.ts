@@ -26,6 +26,7 @@ import { FutbolHoyComponent } from './vistas/principales/futbol-hoy/futbol-hoy.c
 import { FutbolRocolaComponent } from './vistas/principales/futbol-rocola/futbol-rocola.component';
 import { TurnosComponent } from './vistas/forms/turnos/turnos.component';
 import { CarruselComponent } from './components/carrusel/carrusel.component';
+import { StickToolbarComponent } from './components/stick-toolbar/stick-toolbar.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
     FutbolHoyComponent,
     FutbolRocolaComponent,
     TurnosComponent,
-    CarruselComponent
+    CarruselComponent,
+    StickToolbarComponent
   ],
   imports: [
     BrowserModule,
