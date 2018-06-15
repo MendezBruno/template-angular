@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FutbolRocolaComponent } from './futbol-rocola.component';
+import { SimpleStickToolbarComponent } from './simple-stick-toolbar.component';
 
-describe('FutbolRocolaComponent', () => {
-  let component: FutbolRocolaComponent;
-  let fixture: ComponentFixture<FutbolRocolaComponent>;
+describe('SimpleStickToolbarComponent', () => {
+  let component: SimpleStickToolbarComponent;
+  let fixture: ComponentFixture<SimpleStickToolbarComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FutbolRocolaComponent ]
+      declarations: [ SimpleStickToolbarComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FutbolRocolaComponent);
+    fixture = TestBed.createComponent(SimpleStickToolbarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

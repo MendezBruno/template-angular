@@ -1,5 +1,6 @@
 export const ArrayVistas = [
-    'components/stick-toolbar',
+    'components/toolbars/stick-toolbar',
+    'components/toolbars/simple-stick-toolbar',
     'vistas/forms/product',
     'vistas/forms/user',
     'vistas/forms/turnos',

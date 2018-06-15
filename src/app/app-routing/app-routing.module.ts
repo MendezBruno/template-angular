@@ -8,13 +8,15 @@ import { FaceGoogleComponent } from '../vistas/logins/face-google/face-google.co
 import { LoginAdminComponent } from '../vistas/logins/login-admin/login-admin.component';
 import { UserPasswordComponent } from '../vistas/logins/user-password/user-password.component';
 import { TurnosComponent } from '../vistas/forms/turnos/turnos.component';
-import { StickToolbarComponent } from '../components/stick-toolbar/stick-toolbar.component';
+import { StickToolbarComponent } from '../components/toolbars/stick-toolbar/stick-toolbar.component';
+import { SimpleStickToolbarComponent } from '../components/toolbars/simple-stick-toolbar/simple-stick-toolbar.component';
 
 
 const appRoutes: Routes = [
   { path: '',   redirectTo: '/principal', pathMatch: 'full' },
   { path: 'principal', component: PrincipalComponent },
-  { path: 'components/stick-toolbar', component: StickToolbarComponent },
+  { path: 'components/toolbars/simple-stick-toolbar', component: SimpleStickToolbarComponent },
+  { path: 'components/toolbars/stick-toolbar', component: StickToolbarComponent },
   { path: 'vistas/forms/product', component: ProductComponent },
   { path: 'vistas/forms/user', component: UserComponent },
   { path: 'vistas/forms/turnos', component: TurnosComponent },

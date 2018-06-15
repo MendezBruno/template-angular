@@ -6,11 +6,12 @@
     flex: 1 1 auto;
   }
 
-.stick {
+  .stick {
     position:fixed;
-    top:10px;
-    z-index: 10000;
-}
+    width: 100%;
+    top:0;
+    left: 0;
+  }
 
 .flotante {
     display:scroll;
@@ -20,4 +21,8 @@
         right:100px;
         z-index: 10000;
        
+}
+
+.container {
+height: 100%;
 }
