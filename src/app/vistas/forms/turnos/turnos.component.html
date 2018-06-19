@@ -1,3 +1,35 @@
-<p>
-  turnos works!
-</p>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input type="text" name="nombre" [(ngModel)]="nuevoTurno.nombre" id="nombre" matInput placeholder="Nombre">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input type="text" name="apellido" [(ngModel)]="nuevoTurno.apellido" id="apellido" matInput placeholder="Apellido" >
+  </mat-form-field>  
+  <mat-form-field class="example-full-width">
+    <input type="number" name="telefonoCasa" [(ngModel)]="nuevoTurno.telefonoCasa" id="telefonoCasa" matInput placeholder="Telefono">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input type="number" name="telefonoCel" [(ngModel)]="nuevoTurno.telefonoCel" id="telefonoCel" matInput placeholder="Celular">
+  </mat-form-field>  
+  <mat-form-field class="example-full-width">
+    <input type="text" name="email" [(ngModel)]="nuevoTurno.email" id="email" matInput placeholder="Email">
+  </mat-form-field>
+  <div fxLayout="row" fxLayoutAlign="space-around center" > 
+  <mat-form-field class=".example-full-row-width">
+    <input [(ngModel)]="nuevoTurno.fecha" [ngModelOptions]="{standalone: true}" matInput [min]="minDate" [matDatepickerFilter]="myFilter" placeholder="Eliga una fecha" [matDatepicker]="myDatepicker">
+   <mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
+   <mat-datepicker #myDatepicker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field class=".example-full-row-width">
+    <mat-select [(value)]="selected" placeholder="Seleccione un horario">
+      <mat-option *ngFor="let turno of turnos" [value]="turno.value">
+        {{ turno.viewValue }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  </div>      
+  <p>
+    <button type="button"
+
+            (click)="guardarTurno()">Reservar turno</button></p>
+</form>
