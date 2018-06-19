@@ -1,0 +1,33 @@
+
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;   
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .example-full-row-width {
+    width: 50%;
+  }
+
+  button {
+    background-color: #e6413e;
+    border-radius: 4px;
+    box-shadow: none;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.612;
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    padding: 14px 20px 12px;
+    text-decoration: none;
+    width: auto;
+    white-space: nowrap;
+}

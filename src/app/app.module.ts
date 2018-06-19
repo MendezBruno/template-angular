@@ -6,6 +6,8 @@ import { HttpModule, JsonpModule } from '@angular/http';
 import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ScrollDispatchModule } from '@angular/cdk/scrolling';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material';
 
 
 import { AppComponent } from './app.component';
@@ -60,7 +62,9 @@ import { UserGoogleMapsComponent } from './vistas/forms/user-google-maps/user-go
     AppRoutingModule,
     HttpModule,
     JsonpModule,
-    ScrollDispatchModule
+    ScrollDispatchModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
