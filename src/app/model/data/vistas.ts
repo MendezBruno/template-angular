@@ -4,6 +4,7 @@ export const ArrayVistas = [
     'vistas/forms/product',
     'vistas/forms/user',
     'vistas/forms/turnos',
+    'vistas/forms/userGoogleMap',
     'login/face-google',
     'login/login-admin',
     'login/user-password',

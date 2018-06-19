@@ -10,6 +10,7 @@ import { UserPasswordComponent } from '../vistas/logins/user-password/user-passw
 import { TurnosComponent } from '../vistas/forms/turnos/turnos.component';
 import { StickToolbarComponent } from '../components/toolbars/stick-toolbar/stick-toolbar.component';
 import { SimpleStickToolbarComponent } from '../components/toolbars/simple-stick-toolbar/simple-stick-toolbar.component';
+import { UserGoogleMapsComponent } from '../vistas/forms/user-google-maps/user-google-maps.component';
 
 
 const appRoutes: Routes = [
@@ -20,6 +21,7 @@ const appRoutes: Routes = [
   { path: 'vistas/forms/product', component: ProductComponent },
   { path: 'vistas/forms/user', component: UserComponent },
   { path: 'vistas/forms/turnos', component: TurnosComponent },
+  { path: 'vistas/forms/userGoogleMap', component: UserGoogleMapsComponent },
   { path: 'login/face-google', component: FaceGoogleComponent },
   { path: 'login/login-admin', component: LoginAdminComponent },
   { path: 'login/user-password', component: UserPasswordComponent },

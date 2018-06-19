@@ -28,6 +28,7 @@ import { TurnosComponent } from './vistas/forms/turnos/turnos.component';
 import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { StickToolbarComponent } from './components/toolbars/stick-toolbar/stick-toolbar.component';
 import { SimpleStickToolbarComponent } from './components/toolbars/simple-stick-toolbar/simple-stick-toolbar.component';
+import { UserGoogleMapsComponent } from './vistas/forms/user-google-maps/user-google-maps.component';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { SimpleStickToolbarComponent } from './components/toolbars/simple-stick-
     CarruselComponent,
     StickToolbarComponent,
     SimpleStickToolbarComponent,
+    UserGoogleMapsComponent,
   ],
   imports: [
     BrowserModule,
