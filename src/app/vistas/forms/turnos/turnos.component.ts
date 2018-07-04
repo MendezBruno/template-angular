@@ -50,7 +50,13 @@ export class TurnosComponent implements OnInit {
 
         if (this.turnos[i].value === this.selected) {
             const cadenas = this.turnos[i].viewValue.split(':');
-            return new Date(this.nuevoTurno.fecha.getFullYear(),this.nuevoTurno.fecha.getMonth(),this.nuevoTurno.fecha.getDate(),parseInt(cadenas[0]),parseInt(cadenas[1]));
+            return new Date(
+              this.nuevoTurno.fecha.getFullYear(),
+              this.nuevoTurno.fecha.getMonth(),
+              this.nuevoTurno.fecha.getDate(),
+              Number(cadenas[0]),
+              Number(cadenas[1])
+            );
         }
       }
   }

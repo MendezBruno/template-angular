@@ -31,6 +31,7 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { StickToolbarComponent } from './components/toolbars/stick-toolbar/stick-toolbar.component';
 import { SimpleStickToolbarComponent } from './components/toolbars/simple-stick-toolbar/simple-stick-toolbar.component';
 import { UserGoogleMapsComponent } from './vistas/forms/user-google-maps/user-google-maps.component';
+import { MercadoPagoTestComponent } from './vistas/mercado-pago-test/mercado-pago-test.component';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { UserGoogleMapsComponent } from './vistas/forms/user-google-maps/user-go
     StickToolbarComponent,
     SimpleStickToolbarComponent,
     UserGoogleMapsComponent,
+    MercadoPagoTestComponent,
   ],
   imports: [
     BrowserModule,

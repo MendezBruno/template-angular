@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  mercadoPagoPublicKey: 'TEST-7003eb73-f494-4e22-a41c-9aa58a8442b5'
 };
 
 
