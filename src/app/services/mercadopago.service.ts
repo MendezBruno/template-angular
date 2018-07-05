@@ -22,9 +22,8 @@ export class MercadopagoService {
     Mercadopago.getPaymentMethod(payObject, setPaymentMethodInfo);
   }
 
-  getBin() {
-    Mercadopago.getBin();
+  createToken(form, sdkResponseHandler) {
+    Mercadopago.createToken(form, sdkResponseHandler);
   }
-
 
 }
