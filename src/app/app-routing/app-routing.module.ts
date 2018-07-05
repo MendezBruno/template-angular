@@ -11,6 +11,7 @@ import { TurnosComponent } from '../vistas/forms/turnos/turnos.component';
 import { StickToolbarComponent } from '../components/toolbars/stick-toolbar/stick-toolbar.component';
 import { SimpleStickToolbarComponent } from '../components/toolbars/simple-stick-toolbar/simple-stick-toolbar.component';
 import { UserGoogleMapsComponent } from '../vistas/forms/user-google-maps/user-google-maps.component';
+import { MonoOrgComponent } from '../vistas/principales/mono-org/mono-org.component';
 
 
 const appRoutes: Routes = [
@@ -25,6 +26,7 @@ const appRoutes: Routes = [
   { path: 'login/face-google', component: FaceGoogleComponent },
   { path: 'login/login-admin', component: LoginAdminComponent },
   { path: 'login/user-password', component: UserPasswordComponent },
+  { path: 'vistas/principales/monoOrg', component: MonoOrgComponent }
 
 
 

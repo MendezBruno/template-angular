@@ -1,0 +1,8 @@
+<mat-toolbar class="transparent" fxLayout="row" fxLayoutAlign="center center">
+  <img id="titleIcon" src="../assets/images/iriss_logo.png"/>
+  <button mat-button   routerLink="/vistas/forms/product" routerLinkActive="active">Opcion1</button>
+  <button mat-button   routerLink="/vistas/forms/user" routerLinkActive="active"> Opcion2</button>   <!--  *ngIf="getPermission()"  para control de usuario -->
+  <button mat-button   routerLink="/vistas/forms/turnos" routerLinkActive="active"> Opcion3</button>    <!--  *ngIf="getPermission()" para control de usuario -->
+  <span></span>
+  <app-menu fxHide.lg></app-menu>
+</mat-toolbar>

@@ -31,6 +31,8 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { StickToolbarComponent } from './components/toolbars/stick-toolbar/stick-toolbar.component';
 import { SimpleStickToolbarComponent } from './components/toolbars/simple-stick-toolbar/simple-stick-toolbar.component';
 import { UserGoogleMapsComponent } from './vistas/forms/user-google-maps/user-google-maps.component';
+import { MonoOrgComponent } from './vistas/principales/mono-org/mono-org.component';
+import { MainTransparentHeadersComponent } from './components/toolbars/main-transparent-headers/main-transparent-headers.component';
 
 
 @NgModule({
@@ -52,6 +54,8 @@ import { UserGoogleMapsComponent } from './vistas/forms/user-google-maps/user-go
     StickToolbarComponent,
     SimpleStickToolbarComponent,
     UserGoogleMapsComponent,
+    MonoOrgComponent,
+    MainTransparentHeadersComponent,
   ],
   imports: [
     BrowserModule,

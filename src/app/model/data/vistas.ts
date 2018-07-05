@@ -8,4 +8,5 @@ export const ArrayVistas = [
     'login/face-google',
     'login/login-admin',
     'login/user-password',
+    'vistas/principales/monoOrg',
 ];
