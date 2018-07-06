@@ -6,8 +6,8 @@ import { HttpModule, JsonpModule } from '@angular/http';
 import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ScrollDispatchModule } from '@angular/cdk/scrolling';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatNativeDateModule} from '@angular/material';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material';
 
 
 import { AppComponent } from './app.component';
@@ -33,6 +33,7 @@ import { SimpleStickToolbarComponent } from './components/toolbars/simple-stick-
 import { UserGoogleMapsComponent } from './vistas/forms/user-google-maps/user-google-maps.component';
 import { MonoOrgComponent } from './vistas/principales/mono-org/mono-org.component';
 import { MainTransparentHeadersComponent } from './components/toolbars/main-transparent-headers/main-transparent-headers.component';
+import { Carruselv2Component } from './components/carruselv2/carruselv2.component';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { MainTransparentHeadersComponent } from './components/toolbars/main-tran
     UserGoogleMapsComponent,
     MonoOrgComponent,
     MainTransparentHeadersComponent,
+    Carruselv2Component,
   ],
   imports: [
     BrowserModule,
