@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MonoOrgComponent implements OnInit {
 
+  imagenes = [
+    '../../../../assets/img/muppets/muppets1.jpeg',
+    '../../../../assets/img/muppets/muppets2.jpeg',
+    '../../../../assets/img/muppets/muppets3.jpeg',
+  ];
   constructor() { }
 
   ngOnInit() {
