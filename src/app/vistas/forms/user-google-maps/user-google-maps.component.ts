@@ -27,7 +27,7 @@ export class UserGoogleMapsComponent implements OnInit {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(this.map);    
 
-    document.querySelector('button').addEventListener('click', async (event) => {
+    document.querySelector('#botonValidar').addEventListener('click', async (event) => {
       event.preventDefault();
   
       var results = await this.provider.search({ query: this.nuevoUsuario.direccion });    
