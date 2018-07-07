@@ -1,3 +1,17 @@
-<p>
-  user-google-maps works!
-</p>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input type="text" name="nombre" [(ngModel)]="nuevoUsuario.nombre" id="nombre" matInput placeholder="Nombre">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input type="text" name="apellido" [(ngModel)]="nuevoUsuario.apellido" id="apellido" matInput placeholder="Apellido" >
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input type="text" name="direccion" [(ngModel)]="nuevoUsuario.direccion" id="direccion" matInput placeholder="Dirección" >
+  </mat-form-field>
+  <div id="mapid"></div>
+  <p>
+    <button type="button" (click)="guardarUsuario()">Registrar</button>
+  </p>
+</form> 
+
+
