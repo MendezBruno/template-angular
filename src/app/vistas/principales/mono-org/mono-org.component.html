@@ -1,5 +1,7 @@
 <app-main-transparent-headers></app-main-transparent-headers>
 <div class="main" fxLayout="column">
-<iframe fxFlex="50" width="auto" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY?showinfo=0&controls=0"> </iframe> 
-<app-carruselv2 fxFlex="50" [images]="imagenes" ></app-carruselv2>
+    <!-- <iframe fxFlex="50" width="auto" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY?showinfo=0&controls=0"> </iframe>  -->
+    <video fxflex="40" width="auto"  src="../../../../assets/videos/Keyboard-1046.vid" autoplay loop> Tu navegador no admite el elemento <code>video</code>. </video>
+    <app-carruselv2 fxFlex="30" [images]="imagenes" ></app-carruselv2>
+    <app-item-uno fxFlex="30" [item]="item"></app-item-uno>
 </div>

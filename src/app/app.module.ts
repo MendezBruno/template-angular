@@ -18,7 +18,7 @@ import { MainHeaderComponent } from './components/toolbars/main-header/main-head
 import { MenuComponent } from './components/menu/menu.component';
 
 
-// material
+// material components
 import { UserComponent } from './vistas/forms/user/user.component';
 import { ProductComponent } from './vistas/forms/product/product.component';
 import { FaceGoogleComponent } from './vistas/logins/face-google/face-google.component';
@@ -34,6 +34,7 @@ import { UserGoogleMapsComponent } from './vistas/forms/user-google-maps/user-go
 import { MonoOrgComponent } from './vistas/principales/mono-org/mono-org.component';
 import { MainTransparentHeadersComponent } from './components/toolbars/main-transparent-headers/main-transparent-headers.component';
 import { Carruselv2Component } from './components/carruselv2/carruselv2.component';
+import { ItemUnoComponent } from './components/items/item-uno/item-uno.component';
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import { Carruselv2Component } from './components/carruselv2/carruselv2.componen
     MonoOrgComponent,
     MainTransparentHeadersComponent,
     Carruselv2Component,
+    ItemUnoComponent,
   ],
   imports: [
     BrowserModule,
