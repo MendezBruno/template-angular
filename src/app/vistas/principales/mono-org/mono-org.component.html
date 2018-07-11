@@ -1,7 +1,9 @@
 <app-main-transparent-headers></app-main-transparent-headers>
-<div class="main" fxLayout="column">
+<div class="main" fxLayout="column" fxLayoutAlign="center center">
     <!-- <iframe fxFlex="50" width="auto" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY?showinfo=0&controls=0"> </iframe>  -->
-    <video fxflex="40" width="auto"  src="../../../../assets/videos/Keyboard-1046.vid" autoplay loop> Tu navegador no admite el elemento <code>video</code>. </video>
-    <app-carruselv2 fxFlex="30" [images]="imagenes" ></app-carruselv2>
+    <video fxFlex="40" width="auto"  src="../../../../assets/videos/Keyboard-1046.vid" autoplay loop> Tu navegador no admite el elemento <code>video</code>. </video>
+    <span fxFlex="30">
+            <app-carruselv2 [images]="imagenes" ></app-carruselv2>
+    </span>
     <app-item-uno fxFlex="30" [item]="item"></app-item-uno>
 </div>
