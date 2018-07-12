@@ -8,21 +8,21 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
   animations: [
     trigger('flyLeftToRigth', [
       state('show', style({
-        transform: "translateX(0)"        
+        transform: 'translateX(0)'
       })),
       state('hide',   style({
-        transform: "translateX(-100%)"        
+        transform: 'translateX(-100%)'
       })),
       transition('show => hide', animate('1000ms ease-out')),
       transition('hide => show', animate('1000ms ease-in'))
-    ]),    
+    ]),
 
     trigger('flyRigthToLeft', [
       state('show', style({
-        transform: "translateX(0)"        
+        transform: 'translateX(0)'
       })),
       state('hide',   style({
-        transform: "translateX(+100%)"        
+        transform: 'translateX(+100%)'
       })),
       transition('show => hide', animate('1000ms ease-out')),
       transition('hide => show', animate('1000ms ease-in'))
@@ -32,18 +32,18 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
 })
 export class ItemUnoComponent implements OnInit {
 
-  state = 'hide'
+  state = 'hide';
   @Input() item: Item;
 
   constructor(public el: ElementRef) { }
 
   @HostListener('window:scroll', ['$event'])
     checkScroll() {
-      const componentPosition = this.el.nativeElement.offsetTop
-      const scrollPosition = window.pageYOffset
+      const componentPosition = this.el.nativeElement.offsetTop;
+      const scrollPosition = window.pageYOffset;
 
-      if (this.state == 'hide' && (scrollPosition >=(componentPosition - 300))) {
-        this.state = 'show'
+      if (this.state === 'hide' && (scrollPosition >= (componentPosition - 300))) {
+        this.state = 'show';
       }
 
     }
