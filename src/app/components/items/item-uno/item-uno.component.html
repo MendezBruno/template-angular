@@ -1,6 +1,7 @@
-<div fxLayout="column">
+<div class="item-container" fxLayout="column">
   <div fxFlex="30" fxLayout="row" fxLayoutAlign="center center">
     <img [@flyLeftToRigth] fxFlex="50" src={{item.logo}}>
+    <span fxFlex="20" ></span>
     <button mat-button class="myButtonItem" [@flyRigthToLeft] fxFlex="30" > Ingresar </button>
   </div>
   <h3 class="animated infinite bounce" fxFlex="20"> {{item.titulo}} </h3>
