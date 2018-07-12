@@ -5,5 +5,7 @@
     <span fxFlex="30">
             <app-carruselv2 [images]="imagenes" ></app-carruselv2>
     </span>
-    <app-item-uno class="item-uno" fxFlex="30" [item]="item"></app-item-uno>
+    <div fxFlex="30" class="item-container" fxLayout="column" fxLayoutAlign="center center"> 
+        <app-item-uno fxFlex="100" class="item-uno"  [item]="item"></app-item-uno> 
+    </div>
 </div>
