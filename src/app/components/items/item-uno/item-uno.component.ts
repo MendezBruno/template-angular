@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostListener, ElementRef } from '@angular/core';
 import { trigger, state, transition, style, animate } from '@angular/animations';
 
 @Component({
@@ -7,34 +7,46 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
   styleUrls: ['./item-uno.component.css'],
   animations: [
     trigger('flyLeftToRigth', [
-      state('in', style({transform: 'translateX(0)'})),
-      transition('void => *', [
-        style({transform: 'translateX(-100%)'}),
-        animate(1000)
-      ]),
-      transition('* => void', [
-        animate(1000, style({transform: 'translateX(100%)'}))
-      ])
-    ]),
+      state('show', style({
+        transform: "translateX(0)"        
+      })),
+      state('hide',   style({
+        transform: "translateX(-100%)"        
+      })),
+      transition('show => hide', animate('1000ms ease-out')),
+      transition('hide => show', animate('1000ms ease-in'))
+    ]),    
 
     trigger('flyRigthToLeft', [
-      state('in', style({transform: 'translateX(0)'})),
-      transition('void => *', [
-        style({transform: 'translateX(+100%)'}),
-        animate(1000)
-      ]),
-      transition('* => void', [
-        animate(1000, style({transform: 'translateX(100%)'}))
-      ])
+      state('show', style({
+        transform: "translateX(0)"        
+      })),
+      state('hide',   style({
+        transform: "translateX(+100%)"        
+      })),
+      transition('show => hide', animate('1000ms ease-out')),
+      transition('hide => show', animate('1000ms ease-in'))
     ])
 
   ]
 })
 export class ItemUnoComponent implements OnInit {
 
+  state = 'hide'
   @Input() item: Item;
 
-  constructor() { }
+  constructor(public el: ElementRef) { }
+
+  @HostListener('window:scroll', ['$event'])
+    checkScroll() {
+      const componentPosition = this.el.nativeElement.offsetTop
+      const scrollPosition = window.pageYOffset
+
+      if (this.state == 'hide' && (scrollPosition >=(componentPosition - 300))) {
+        this.state = 'show'
+      }
+
+    }
 
   ngOnInit() {
   }
