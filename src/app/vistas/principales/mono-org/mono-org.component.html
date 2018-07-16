@@ -1,10 +1,10 @@
 <app-main-transparent-headers></app-main-transparent-headers>
-<div class="main" fxLayout="column" fxLayoutAlign="center center">
+<div class="main" fxLayout="column">
     <!-- <iframe fxFlex="50" width="auto" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY?showinfo=0&controls=0"> </iframe>  -->
-    <video fxFlex="40" width="auto"  src="../../../../assets/videos/Keyboard-1046.vid" autoplay loop> Tu navegador no admite el elemento <code>video</code>. </video>
-    <span fxFlex="30">
-            <app-carruselv2 [images]="imagenes" ></app-carruselv2>
-    </span>
+    <video fxFlex="40" src="../../../../assets/videos/Keyboard-1046.vid" autoplay loop> Tu navegador no admite el elemento <code>video</code>. </video>
+    
+            <app-carruselv2 fxFlex="30" [images]="imagenes" ></app-carruselv2>
+    
     <div fxFlex="30" class="item-container" fxLayout="column" fxLayoutAlign="center center"> 
         <app-item-uno fxFlex="100" class="item-uno"  [item]="item"></app-item-uno> 
     </div>

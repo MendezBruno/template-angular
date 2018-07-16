@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, HostListener, ElementRef } from '@angular/core';
+import { Component, OnInit, Input, HostListener, ElementRef, ViewChild } from '@angular/core';
 import { trigger, state, transition, style, animate } from '@angular/animations';
 
 @Component({
@@ -34,15 +34,16 @@ export class ItemUnoComponent implements OnInit {
 
   state = 'hide';
   @Input() item: Item;
+  @ViewChild ('angularContainer') angularContainer: ElementRef;
 
   constructor(public el: ElementRef) { }
 
   @HostListener('window:scroll', ['$event'])
     checkScroll() {
-      const componentPosition = this.el.nativeElement.offsetTop;
+      const componentPosition = this.angularContainer.nativeElement.offsetTop;
       const scrollPosition = window.pageYOffset;
 
-      if (this.state === 'hide' && (scrollPosition >= (componentPosition - 300))) {
+      if (this.state === 'hide' && (scrollPosition >= componentPosition)) {
         this.state = 'show';
       }
 
