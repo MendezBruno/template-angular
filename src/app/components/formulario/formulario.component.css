@@ -7,10 +7,28 @@
   
   .example-full-width {
     width: 100%;    
+    color:white;
   }
 
-  .example-input{
-    border-bottom: 1px solid white;
-  }
+  .example-bottom{
+    background-color: #e6413e;
+    /*border-radius: 4px;*/
+    box-shadow: none;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.612;
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    padding: 14px 20px 12px;
+    text-decoration: none;
+    width: auto;
+    white-space: nowrap;
+}
+
+  
 
   
