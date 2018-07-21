@@ -40,7 +40,8 @@ export class ItemUnoComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
     checkScroll() {
-      const componentPosition = this.angularContainer.nativeElement.offsetTop;
+      const componentPosition = this.el.nativeElement.getBoundingClientRect().top;
+      const componentHeigth = this.angularContainer.nativeElement.offsetHeight;
       const scrollPosition = window.pageYOffset;
 
       if (this.state === 'hide' && (scrollPosition >= componentPosition)) {
