@@ -26,7 +26,7 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
       transition('show => hide', animate('1000ms ease-out')),
       transition('hide => show', animate('1000ms ease-in'))
     ])
-  ]  
+  ]
 })
 export class FormularioComponent implements OnInit {
 
@@ -37,21 +37,21 @@ export class FormularioComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
     checkScroll() {
-      
+
       const componentPosition = this.el.nativeElement.getBoundingClientRect().top;
       const scrollPosition = window.pageYOffset;
 
-      if (this.state == 'hide' && (scrollPosition >= componentPosition)) {
+      if (this.state === 'hide' && (scrollPosition >= componentPosition)) {
         this.state = 'show';
-      }      
+      }
 
     }
 
   ngOnInit() {
   }
 
-  guardarConsulta(){
-    
+  guardarConsulta() {
+
     console.log(this.consulta);
   }
 
