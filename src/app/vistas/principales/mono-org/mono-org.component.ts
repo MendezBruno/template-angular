@@ -8,34 +8,56 @@ import { Component, OnInit } from '@angular/core';
 export class MonoOrgComponent implements OnInit {
 
 
-  item: any = {};
+  items = [];
   imagenes = [ ];
   constructor() {
+    this.prepararCarrusel();
+    this.prepararItemUno();
+  }
+
+  ngOnInit() {
+
+
+  }
+
+
+  prepararItemUno() {
+    // item angular
+    const item1: any = {};
+    item1.titulo = 'LALALA';
+    item1.pharagrap = 'Texto explicativo sobre lo que estas viendo en esta seccion lalalalaalalalalalalalal';
+    item1.logo = '../../../../assets/img/logos/angular-svg.svg';
+    this.items.push(item1);
+    // item node
+    const item2: any = {};
+    item2.titulo = 'LALALA';
+    item2.pharagrap = 'Texto explicativo sobre lo que estas viendo en esta seccion lalalalaalalalalalalalal';
+    item2.logo = '../../../../assets/img/logos/node.svg';
+    this.items.push(item2);
+    // htnl5 css logo HTML5CSS3Logos
+    const item3: any = {};
+    item3.titulo = 'LALALA';
+    item3.pharagrap = 'Texto explicativo sobre lo que estas viendo en esta seccion lalalalaalalalalalalalal';
+    item3.logo = '../../../../assets/img/logos/HTML5CSS3Logos.svg';
+    this.items.push(item3);
+  }
+
+  prepararCarrusel() {
     const imagen1 = new Imagen();
     const imagen2 = new Imagen();
     const imagen3 = new Imagen();
     const imagen4 = new Imagen();
     const imagen5 = new Imagen();
-    const imagen6 = new Imagen();
     imagen1.url = '../../../../assets/img/programming/code-1839406_640.jpg';
     imagen2.url = '../../../../assets/img/programming/code-2620118_640.jpg';
     imagen3.url = '../../../../assets/img/programming/coding-924920_640.jpg';
-    imagen4.url = '../../../../assets/img/programming/computer-120964_640.jpg';
+    imagen4.url = '../../../../assets/img/programming/computer-1209641_640.jpg';
     imagen5.url = '../../../../assets/img/programming/technology-785742_640.jpg';
-    imagen6.url = '../../../../assets/img/programming/work-731198_640.jpg';
     this.imagenes.push(imagen1);
     this.imagenes.push(imagen2);
     this.imagenes.push(imagen3);
     this.imagenes.push(imagen4);
     this.imagenes.push(imagen5);
-    this.imagenes.push(imagen6);
-  }
-
-  ngOnInit() {
-    this.item.titulo = 'LALALA';
-    this.item.pharagrap = 'Texto explicativo sobre lo que estas viendo en esta seccion lalalalaalalalalalalalal';
-    this.item.logo = '../../../../assets/img/logos/angular.png';
-
   }
 
 }

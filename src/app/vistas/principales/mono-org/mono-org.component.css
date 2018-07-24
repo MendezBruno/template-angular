@@ -1,6 +1,16 @@
 .main{
     position: absolute;
-    height: 3000px;
+    height: 100%;
     width: 100%;
+}
+
+.item-uno {
+    width: 50%;
+    
+}
+
+.item-container {
+    width: 100%;
+    background: lightgray;
 }
 

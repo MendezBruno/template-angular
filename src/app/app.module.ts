@@ -35,6 +35,7 @@ import { MonoOrgComponent } from './vistas/principales/mono-org/mono-org.compone
 import { MainTransparentHeadersComponent } from './components/toolbars/main-transparent-headers/main-transparent-headers.component';
 import { Carruselv2Component } from './components/carruselv2/carruselv2.component';
 import { ItemUnoComponent } from './components/items/item-uno/item-uno.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
 
 
 @NgModule({
@@ -60,6 +61,7 @@ import { ItemUnoComponent } from './components/items/item-uno/item-uno.component
     MainTransparentHeadersComponent,
     Carruselv2Component,
     ItemUnoComponent,
+    FormularioComponent,
   ],
   imports: [
     BrowserModule,

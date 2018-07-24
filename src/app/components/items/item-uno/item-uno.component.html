@@ -1,7 +1,8 @@
-<div fxLayout="column">
-  <div fxFlex="30" fxLayout="row" fxLayoutAlign="center center">
-    <img [@flyLeftToRigth] fxFlex="50" src={{item.logo}}>
-    <button mat-button class="myButtonItem" [@flyRigthToLeft] fxFlex="30" > Ingresar </button>
+<div #angularContainer class="item-container" fxLayout="column" fxLayoutAlign="start center">
+  <div  fxFlex="30" fxLayout="row" fxLayoutAlign="center center">
+    <img [@flyLeftToRigth]="state" fxFlex="50" src={{item.logo}}>
+    <span fxFlex="20" ></span>
+    <button mat-button class="myButtonItem" [@flyRigthToLeft]= "state" fxFlex="30" > Ingresar </button>
   </div>
   <h3 fxFlex="20"> {{item.titulo}} </h3>
   <p fxFlex="50"> {{item.pharagrap}} </p>

@@ -1,4 +1,11 @@
-.myButtonItem{
+.myButtonItem {
     height: 20%;
     width: 100%;
+}
+
+.item-container {
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
 }
