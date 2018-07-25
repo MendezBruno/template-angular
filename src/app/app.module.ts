@@ -36,6 +36,8 @@ import { MainTransparentHeadersComponent } from './components/toolbars/main-tran
 import { Carruselv2Component } from './components/carruselv2/carruselv2.component';
 import { ItemUnoComponent } from './components/items/item-uno/item-uno.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
+import { ItemDosComponent } from './components/items/item-dos/item-dos.component';
+import { FooterUnoComponent } from './components/footers/footer-uno/footer-uno.component';
 
 
 @NgModule({
@@ -62,6 +64,8 @@ import { FormularioComponent } from './components/formulario/formulario.componen
     Carruselv2Component,
     ItemUnoComponent,
     FormularioComponent,
+    ItemDosComponent,
+    FooterUnoComponent,
   ],
   imports: [
     BrowserModule,

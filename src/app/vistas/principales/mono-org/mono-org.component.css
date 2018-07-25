@@ -14,3 +14,10 @@
     background: lightgray;
 }
 
+.title {
+    background: black;
+    text-align: center;
+    color: azure;
+    margin: 0;
+}
+
