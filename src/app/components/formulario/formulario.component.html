@@ -20,8 +20,8 @@
     <mat-form-field class="example-full-width">
       <input type="text" name="localizacion" [(ngModel)]="consulta.localizacion" id="localizacion" matInput placeholder="CIUDAD/PROVINCIA">
     </mat-form-field>
-    <mat-form-field class="example-full-width">
-      <input type="text" name="mensaje" [(ngModel)]="consulta.mensaje" id="mensaje" matInput placeholder="MENSAJE">
+    <mat-form-field class="example-full-width">      
+      <textarea name="mensaje" [(ngModel)]="consulta.mensaje" id="mensaje" matInput placeholder="MENSAJE"></textarea>
     </mat-form-field>
     <p>
       <button class="example-bottom" style="margin-left:67%" type="button" (click)="guardarConsulta()">ENVIAR</button>
