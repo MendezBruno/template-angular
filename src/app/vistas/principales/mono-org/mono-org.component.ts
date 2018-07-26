@@ -10,6 +10,10 @@ export class MonoOrgComponent implements OnInit {
 
   items = [];
   imagenes = [ ];
+  imagenes2 = [];
+  imagesPerFrameBig = 1;
+  imagesPerFrameSmall = 3;
+
   constructor() {
     this.prepararCarrusel();
     this.prepararItemUno();
@@ -58,6 +62,18 @@ export class MonoOrgComponent implements OnInit {
     this.imagenes.push(imagen3);
     this.imagenes.push(imagen4);
     this.imagenes.push(imagen5);
+
+    this.imagenes2.push(imagen1);
+    this.imagenes2.push(imagen2);
+    this.imagenes2.push(imagen3);
+    this.imagenes2.push(imagen4);
+    this.imagenes2.push(imagen5);
+    this.imagenes2.push(imagen1);
+    this.imagenes2.push(imagen2);
+    this.imagenes2.push(imagen3);
+    this.imagenes2.push(imagen4);
+    this.imagenes2.push(imagen5);
+
   }
 
 }

@@ -38,6 +38,7 @@ import { ItemUnoComponent } from './components/items/item-uno/item-uno.component
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { ItemDosComponent } from './components/items/item-dos/item-dos.component';
 import { FooterUnoComponent } from './components/footers/footer-uno/footer-uno.component';
+import { VideoComponent } from './components/video/video.component';
 
 
 @NgModule({
@@ -66,6 +67,7 @@ import { FooterUnoComponent } from './components/footers/footer-uno/footer-uno.c
     FormularioComponent,
     ItemDosComponent,
     FooterUnoComponent,
+    VideoComponent,
   ],
   imports: [
     BrowserModule,

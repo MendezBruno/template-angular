@@ -1,11 +1,12 @@
 <app-main-transparent-headers></app-main-transparent-headers>
 <div fxLayout="column">
     <!-- <iframe fxFlex="50" width="auto" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY?showinfo=0&controls=0"> </iframe>  -->
+    <app-video></app-video>
+    <!-- <video   width="100%" class="videoclass" src="../../../../assets/videos/Keyboard-1046.vid" autoplay loop> Tu navegador no admite el elemento <code>video</code>. </video> -->
     
-    <video   width="100%" class="videoclass" src="../../../../assets/videos/Keyboard-1046.vid" autoplay loop> Tu navegador no admite el elemento <code>video</code>. </video>
-    
-    <app-carruselv2 fxFlex="30" [images]="imagenes" ></app-carruselv2>
-    
+    <app-carruselv2 fxFlex="30" [images]="imagenes" [imagesPerFrame]="imagesPerFrameGrande"></app-carruselv2>
+    <app-carruselv2 fxFlex="30" [images]="imagenes2" [imagesPerFrame]="imagesPerFrameSmall"></app-carruselv2>
+
     <h3 class="title"> Tecnologias que trabajamos </h3>
 
     <div  class="item-container" fxLayout="column" fxLayoutAlign="center center"> 
