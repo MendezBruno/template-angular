@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -39,6 +39,8 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { ItemDosComponent } from './components/items/item-dos/item-dos.component';
 import { FooterUnoComponent } from './components/footers/footer-uno/footer-uno.component';
 import { VideoComponent } from './components/video/video.component';
+import { FunctionSatisfyDirective } from './directives/function-satisfy.directive';
+import { ReactiveFormOneComponent } from './vistas/forms/reactive-form-one/reactive-form-one.component';
 
 
 @NgModule({
@@ -68,6 +70,8 @@ import { VideoComponent } from './components/video/video.component';
     ItemDosComponent,
     FooterUnoComponent,
     VideoComponent,
+    FunctionSatisfyDirective,
+    ReactiveFormOneComponent,
   ],
   imports: [
     BrowserModule,
@@ -76,6 +80,7 @@ import { VideoComponent } from './components/video/video.component';
     MaterialModule,
     FlexLayoutModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     HttpModule,
     JsonpModule,
     ScrollDispatchModule,

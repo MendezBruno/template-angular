@@ -1,0 +1,79 @@
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<form notEmpty [myCallback]="theCallback" [formGroup]="pointerForm" (ngSubmit)="onSubmit()">
+  
+  <label>
+    X:
+    <input type="text" formControlName="x">
+  </label>
+<br>
+  <label>
+    Y:
+    <input type="text" formControlName="y">
+  </label>
+<br>
+  <button type="submit" [disabled]="!pointerForm.valid">agregar punto</button>
+
+
+</form>
+
+<br>
+
+<form notEmpty [myCallback]="theCallback" [formGroup]="profileForm">
+  
+  <label>
+    First Name:
+    <input type="text" formControlName="firstName">
+  </label>
+<br>
+  <label>
+    Last Name:
+    <input type="text" formControlName="lastName">
+  </label>
+ <br>
+  <label>
+    Country:
+    <select formControlName="country">
+    <option *ngFor="let country of countrys" [value]="country">{{country}}</option>
+  </select>
+  </label>
+ <br>
+ <div notEmpty [myCallback]="theCallback" formGroupName="address">
+  <h3>Address</h3>
+
+  <label>
+    Street:
+    <input type="text" formControlName="street">
+  </label>
+  <br>
+  <label>
+    City:
+    <input type="text" formControlName="city">
+  </label>
+  <br>
+  <label>
+    State:
+    <input type="text" formControlName="state">
+  </label>
+  <br>
+  <label>
+    Zip Code:
+    <input type="text" formControlName="zip">
+  </label>
+  <br>
+  </div> 
+    <button type="submit" [disabled]="!profileForm.valid">submit</button>
+
+</form>
+
+<br>
+<p>
+  Form Pointer Status: {{ pointerForm.status }}
+</p>
+
+<br>
+<p>
+  Form Profile Status: {{ profileForm.status }}
+</p>
