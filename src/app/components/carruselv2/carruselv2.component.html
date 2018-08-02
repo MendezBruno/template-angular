@@ -1,0 +1,7 @@
+<div class="carousel">
+  <ul [ngStyle]="{'width': getWidthul()}" class="slides">
+    <li [ngStyle]="{'width': getWidthli()}" *ngFor="let image of images">
+      <img src="{{image.url}}">
+    </li>
+  </ul>
+</div>

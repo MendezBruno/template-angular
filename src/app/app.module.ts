@@ -1,13 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ScrollDispatchModule } from '@angular/cdk/scrolling';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatNativeDateModule} from '@angular/material';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material';
 
 
 import { AppComponent } from './app.component';
@@ -18,7 +18,7 @@ import { MainHeaderComponent } from './components/toolbars/main-header/main-head
 import { MenuComponent } from './components/menu/menu.component';
 
 
-// material
+// material components
 import { UserComponent } from './vistas/forms/user/user.component';
 import { ProductComponent } from './vistas/forms/product/product.component';
 import { FaceGoogleComponent } from './vistas/logins/face-google/face-google.component';
@@ -32,6 +32,16 @@ import { StickToolbarComponent } from './components/toolbars/stick-toolbar/stick
 import { SimpleStickToolbarComponent } from './components/toolbars/simple-stick-toolbar/simple-stick-toolbar.component';
 import { UserGoogleMapsComponent } from './vistas/forms/user-google-maps/user-google-maps.component';
 import { MercadoPagoTestComponent } from './vistas/mercado-pago-test/mercado-pago-test.component';
+import { MonoOrgComponent } from './vistas/principales/mono-org/mono-org.component';
+import { MainTransparentHeadersComponent } from './components/toolbars/main-transparent-headers/main-transparent-headers.component';
+import { Carruselv2Component } from './components/carruselv2/carruselv2.component';
+import { ItemUnoComponent } from './components/items/item-uno/item-uno.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
+import { ItemDosComponent } from './components/items/item-dos/item-dos.component';
+import { FooterUnoComponent } from './components/footers/footer-uno/footer-uno.component';
+import { VideoComponent } from './components/video/video.component';
+import { FunctionSatisfyDirective } from './directives/function-satisfy.directive';
+import { ReactiveFormOneComponent } from './vistas/forms/reactive-form-one/reactive-form-one.component';
 
 
 @NgModule({
@@ -54,6 +64,16 @@ import { MercadoPagoTestComponent } from './vistas/mercado-pago-test/mercado-pag
     SimpleStickToolbarComponent,
     UserGoogleMapsComponent,
     MercadoPagoTestComponent,
+    MonoOrgComponent,
+    MainTransparentHeadersComponent,
+    Carruselv2Component,
+    ItemUnoComponent,
+    FormularioComponent,
+    ItemDosComponent,
+    FooterUnoComponent,
+    VideoComponent,
+    FunctionSatisfyDirective,
+    ReactiveFormOneComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,6 +82,7 @@ import { MercadoPagoTestComponent } from './vistas/mercado-pago-test/mercado-pag
     MaterialModule,
     FlexLayoutModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     HttpModule,
     JsonpModule,
     ScrollDispatchModule,

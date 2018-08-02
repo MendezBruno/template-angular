@@ -5,8 +5,10 @@ export const ArrayVistas = [
     'vistas/forms/user',
     'vistas/forms/turnos',
     'vistas/forms/userGoogleMap',
+    'vistas/forms/reactive-form-one',
     'login/face-google',
     'login/login-admin',
     'login/user-password',
-    'vistas/mercado-pago-test'
+    'vistas/mercado-pago-test',
+    'vistas/principales/monoOrg',
 ];
