@@ -18,20 +18,34 @@ export class FunctionSatisfyDirective implements Validator  {
 
 
   validate(control: AbstractControl): {[key: string]: any} {
+
     if (control.value != null || typeof control.value === 'string' && control.value.length !== 0) {
-      return this.anySatifyNotNull(control) ? null : { 'notEmpty': true };
-    } else {
+      //return this.anySatifyNotNull(control) ? null : { 'notEmpty': true };
+      return this.allSatifyNotNull(control) ? null : { 'notEmpty': true };
+    } 
+    else {
       return null;
     }
-  }
-  private anySatifyNotNull (control: any): boolean   {
-    let res;
-    (Object.values(control.controls)).forEach( (aControl) => {
-     // console.log(control)
-      if (this.myCallback(aControl)) {res = true; }
-      // res = this.myCallback(control);
-    });
-       return res;
 
   }
+
+  /*private anySatifyNotNull (control: any): boolean {
+    let res;       
+
+    (Object.values(control.controls)).forEach( (aControl) => {
+    
+      if (this.myCallback(aControl)) {res = true; }
+      
+    });
+       
+    return res;
+
+  }  */
+  
+  private allSatifyNotNull (control: any): boolean {    
+    
+    return (Object.values(control.controls)).every((element, index, array) => {return this.myCallback(element);} );          
+
+  }
+
 }

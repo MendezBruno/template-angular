@@ -1,79 +1,99 @@
-<p>
-  Start editing to see some magic happen :)
-</p>
+<h3>Coordenadas</h3>
 
-<form notEmpty [myCallback]="theCallback" [formGroup]="pointerForm" (ngSubmit)="onSubmit()">
-  
-  <label>
-    X:
-    <input type="text" formControlName="x">
-  </label>
+<table border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
+  <tr>
+    <br>
+    <form notEmpty [myCallback]="theCallback2" [formGroup]="pointerForm" (ngSubmit)="onSubmit2()">
+
+      <label>
+        X:
+        <input type="text" formControlName="x">
+      </label>
+      <br>
+      <br>
+      <label>
+        Y:
+        <input type="text" formControlName="y">
+      </label>
+      <br>
+      <br>
+      <button type="submit" [disabled]="!pointerForm.valid">agregar punto</button>
+
+    </form>
+    <br>
+  </tr>
+</table>
+
+<h3>Datos personales</h3>
+
+<table border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
+  <tr>
+    <br>
+    <form notEmpty [myCallback]="theCallback" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+      <label>
+        First Name:
+        <input type="text" formControlName="firstName">
+      </label>
+      <br>
+      <br>
+      <label>
+        Last Name:
+        <input type="text" formControlName="lastName">
+      </label>
+      <br>
+      <br>
+      <label>
+        Country:
+        <select formControlName="country">
+          <option *ngFor="let country of countrys" [value]="country">{{country}}</option>
+        </select>
+      </label>
+
+      <h4>Dirección</h4>
+
+      <div notEmpty [myCallback]="theCallback" formGroupName="address">
+
+        <label>
+          Street:
+          <input type="text" formControlName="street">
+        </label>
+        <br>
+        <br>
+        <label>
+          City:
+          <input type="text" formControlName="city">
+        </label>
+        <br>
+        <br>
+        <label>
+          State:
+          <input type="text" formControlName="state">
+        </label>
+        <br>
+        <br>
+        <label>
+          Zip Code:
+          <input type="text" formControlName="zip">
+        </label>
+
+      </div>
+
+      <br>
+
+      <button type="submit" [disabled]="!profileForm.valid">submit</button>
+
+    </form>
+    <br>
+  </tr>
+</table>
+
 <br>
-  <label>
-    Y:
-    <input type="text" formControlName="y">
-  </label>
-<br>
-  <button type="submit" [disabled]="!pointerForm.valid">agregar punto</button>
 
-
-</form>
-
-<br>
-
-<form notEmpty [myCallback]="theCallback" [formGroup]="profileForm">
-  
-  <label>
-    First Name:
-    <input type="text" formControlName="firstName">
-  </label>
-<br>
-  <label>
-    Last Name:
-    <input type="text" formControlName="lastName">
-  </label>
- <br>
-  <label>
-    Country:
-    <select formControlName="country">
-    <option *ngFor="let country of countrys" [value]="country">{{country}}</option>
-  </select>
-  </label>
- <br>
- <div notEmpty [myCallback]="theCallback" formGroupName="address">
-  <h3>Address</h3>
-
-  <label>
-    Street:
-    <input type="text" formControlName="street">
-  </label>
-  <br>
-  <label>
-    City:
-    <input type="text" formControlName="city">
-  </label>
-  <br>
-  <label>
-    State:
-    <input type="text" formControlName="state">
-  </label>
-  <br>
-  <label>
-    Zip Code:
-    <input type="text" formControlName="zip">
-  </label>
-  <br>
-  </div> 
-    <button type="submit" [disabled]="!profileForm.valid">submit</button>
-
-</form>
-
-<br>
 <p>
   Form Pointer Status: {{ pointerForm.status }}
 </p>
 
-<br>
 <p>
   Form Profile Status: {{ profileForm.status }}
 </p>

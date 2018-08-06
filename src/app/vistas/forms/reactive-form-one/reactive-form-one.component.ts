@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { FormBuilder } from '@angular/forms';
 
 
 @Component({
@@ -8,13 +8,15 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
   styleUrls: ['./reactive-form-one.component.css']
 })
 export class ReactiveFormOneComponent {
-  name = 'Angular';
-  countrys = ['Arg', 'Uru', 'Bra', 'Bol'];
+  
+  name = 'Angular';  
+  countrys = ['Arg', 'Uru', 'Bra', 'Bol'];  
+  
   pointerForm = this.fb.group({
     x: [''],
     y: [''],
   });
-
+  
   profileForm = this.fb.group({
       firstName: [''],
       lastName: [''],
@@ -28,27 +30,41 @@ export class ReactiveFormOneComponent {
   });
 
 
-  public theBoundCallback: Function;
+  //public theBoundCallback: Function;
 
   constructor(private fb: FormBuilder) {
-    this.theBoundCallback = this.theCallback.bind(this);
+    //this.theBoundCallback = this.theCallback.bind(this);
   }
 
   public theCallback(control): boolean {
-    console.log(control);
+    
     return control.value !== '';
   }
 
-  onSubmit() {
-    // TODO: Use EventEmitter with form value
-    console.warn(this.profileForm.value);
-    console.log(this.profileForm.value.x);
-    console.log(this.profileForm.value.y);
+  public theCallback2(control): boolean {       
+
+    var valor = control.value;
+
+    return valor !== '' && !(isNaN(valor));
   }
 
+  /*public theCallbackPointer(control): boolean {
+    console.log(control);
+    return control.value !== '';
+  }*/
 
+  onSubmit() {
+    
+    console.log(this.profileForm.value);
+    
+  }
 
-
+  onSubmit2() {
+    // TODO: Use EventEmitter with form value
+    console.warn(this.pointerForm.value);
+    console.log(this.pointerForm.value.x);
+    console.log(this.pointerForm.value.y);
+  }
 
 }
 
