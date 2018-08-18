@@ -6,6 +6,7 @@ export const ArrayVistas = [
     'vistas/forms/turnos',
     'vistas/forms/userGoogleMap',
     'vistas/forms/reactive-form-one',
+    'vistas/components/commons',
     'login/face-google',
     'login/login-admin',
     'login/user-password',

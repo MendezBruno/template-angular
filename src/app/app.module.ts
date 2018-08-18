@@ -42,6 +42,8 @@ import { FooterUnoComponent } from './components/footers/footer-uno/footer-uno.c
 import { VideoComponent } from './components/video/video.component';
 import { FunctionSatisfyDirective } from './directives/function-satisfy.directive';
 import { ReactiveFormOneComponent } from './vistas/forms/reactive-form-one/reactive-form-one.component';
+import { DropLoadFileComponent } from './commons-components/drop-load-file/drop-load-file.component';
+import { CommonsViewComponent } from './vistas/shared-components/commons-view/commons-view.component';
 
 
 @NgModule({
@@ -74,6 +76,8 @@ import { ReactiveFormOneComponent } from './vistas/forms/reactive-form-one/react
     VideoComponent,
     FunctionSatisfyDirective,
     ReactiveFormOneComponent,
+    DropLoadFileComponent,
+    CommonsViewComponent,
   ],
   imports: [
     BrowserModule,

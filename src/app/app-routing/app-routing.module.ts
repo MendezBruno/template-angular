@@ -14,6 +14,7 @@ import { UserGoogleMapsComponent } from '../vistas/forms/user-google-maps/user-g
 import { MercadoPagoTestComponent } from '../vistas/mercado-pago-test/mercado-pago-test.component';
 import { MonoOrgComponent } from '../vistas/principales/mono-org/mono-org.component';
 import { ReactiveFormOneComponent } from '../vistas/forms/reactive-form-one/reactive-form-one.component';
+import { CommonsViewComponent } from '../vistas/shared-components/commons-view/commons-view.component';
 
 
 const appRoutes: Routes = [
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
   { path: 'login/face-google', component: FaceGoogleComponent },
   { path: 'login/login-admin', component: LoginAdminComponent },
   { path: 'login/user-password', component: UserPasswordComponent },
-  { path: 'vistas/principales/monoOrg', component: MonoOrgComponent }
+  { path: 'vistas/principales/monoOrg', component: MonoOrgComponent },
+  { path: 'vistas/components/commons', component: CommonsViewComponent },
 
 
 
