@@ -1,10 +1,14 @@
-.panel{
-    height: 1000px;
-    width: 1000px;
-    background: red;
-}
+
 
 .example {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 2px dashed #ccc;
+    height: 600px;
+}
+
+.text-drop {
+    line-height: 300px;
 }

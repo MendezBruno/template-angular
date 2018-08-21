@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommonsViewComponent implements OnInit {
 
+  extensiones = ['.xlsx','.xls','.ods'];
+  multifile = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  getFiles(event) {
+    console.log(event);
+  }
+
+  getFile(event) {
+    console.log(event);
+  }
+
+  errorHandle(error: Error) {
+    console.log( error );
   }
 
 }

@@ -1,1 +1,6 @@
-<app-drop-load-file></app-drop-load-file>
+<app-drop-load-file 
+[extensions]="extensiones" 
+(files)="getFiles($event)"
+(file)="getFile($event)"
+(error)="errorHandle($error)"
+></app-drop-load-file>
