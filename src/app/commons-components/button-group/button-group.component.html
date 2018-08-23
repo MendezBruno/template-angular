@@ -1,0 +1,18 @@
+<div class="btn-group buttons-group" role="group">
+    <button type="button" class="btn buttons buttons__outline first-child" 
+        [disabled]="disabled"
+        [class.buttons__outline--active]="opcion == 'Menor'"
+        (click)="pressedButton('Menor')"
+    >Menor</button>
+    <button type="button" class="btn buttons buttons__outline" 
+        [disabled]="disabled"
+        [class.buttons__outline--active]="opcion == 'Mayor'"
+        (click)="pressedButton('Mayor')"
+    >Mayor</button>
+    <button type="button" class="btn buttons buttons__outline last-child" 
+        [disabled]="disabled"
+        [class.buttons__outline--active]="opcion == 'Promedio'"
+        (click)="pressedButton('Promedio')"
+    >Promedio</button>
+</div>
+  
