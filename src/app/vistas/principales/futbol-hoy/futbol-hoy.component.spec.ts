@@ -19,7 +19,5 @@ describe('FutbolHoyComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+
 });

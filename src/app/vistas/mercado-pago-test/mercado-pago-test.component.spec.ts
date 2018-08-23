@@ -19,7 +19,5 @@ describe('MercadoPagoTestComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  
 });

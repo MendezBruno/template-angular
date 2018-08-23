@@ -7,7 +7,7 @@ export class CuitFormatDirective{
 
   DIGITS_REGEXP =  new RegExp(/^[0-9]*$/);
 
-  constructor(private el: ElementRef) {
+  constructor(private el?: ElementRef) {
   
         this.el.nativeElement.onpaste = (e:any) => {
         e.preventDefault();

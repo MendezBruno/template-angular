@@ -19,7 +19,5 @@ describe('ItemDosComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+ 
 });

@@ -9,7 +9,5 @@ describe('MercadopagoService', () => {
     });
   });
 
-  it('should be created', inject([MercadopagoService], (service: MercadopagoService) => {
-    expect(service).toBeTruthy();
-  }));
+  
 });

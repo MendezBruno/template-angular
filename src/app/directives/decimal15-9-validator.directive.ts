@@ -7,7 +7,7 @@ export class Decimal159ValidatorDirective {
 
   DIGITS_REGEXP =  new RegExp(/^[0-9]{1,6}(\.[0-9]{0,9}){0,1}$/g)
 
-  constructor(private el: ElementRef) { }
+  constructor(private el?: ElementRef) { }
 
   @HostListener('keydown', ['$event']) onKeyDown(event) {
     let e = <KeyboardEvent> event;

@@ -19,7 +19,4 @@ describe('LoginAdminComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });

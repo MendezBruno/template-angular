@@ -7,7 +7,7 @@ export class OnlyNumbersDirective {
 
 
   DIGITS_REGEXP =  new RegExp(/D*/g);
-  constructor(private el: ElementRef) { 
+  constructor(private el?: ElementRef) { 
 
       // Sanatize clipboard by removing any non-numeric input after pasting
       this.el.nativeElement.onpaste = (e:any) => {

@@ -19,7 +19,5 @@ describe('CommonsViewComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+ 
 });

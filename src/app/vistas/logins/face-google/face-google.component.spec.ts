@@ -19,7 +19,5 @@ describe('FaceGoogleComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+ 
 });

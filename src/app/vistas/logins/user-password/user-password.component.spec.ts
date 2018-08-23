@@ -19,7 +19,4 @@ describe('UserPasswordComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });
