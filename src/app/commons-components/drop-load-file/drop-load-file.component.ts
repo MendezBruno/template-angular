@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef, Input, Output, EventEmitter } from '@angular/core';
-import { LogsCustom } from '../../Utils/logs';
+import { LogsCustom } from '../../utils/logs';
 
 @Component({
   selector: 'app-drop-load-file',
