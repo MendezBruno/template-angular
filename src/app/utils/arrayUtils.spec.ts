@@ -29,4 +29,20 @@ describe('AppComponent', () => {
     console.log(removed);
 
   }));
+
+  it('debe remover el ultimo y devolverlo', async(() => {
+    let arrayTest: Array<any> = ['1','2','3'];
+    let last = ArrayUtils.last(arrayTest);
+    expect(last).toBe('3');
+    expect(arrayTest.length).toBe(2);
+  }));
+
+  it('debe remover el primero y devolverlo', async(() => {
+    let arrayTest: Array<any> = ['1','2','3'];
+    let last = ArrayUtils.first(arrayTest);
+    expect(last).toBe('1');
+    expect(arrayTest.length).toBe(2);
+  }));
+
+
 });
