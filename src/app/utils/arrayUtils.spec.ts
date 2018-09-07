@@ -150,6 +150,20 @@ describe('ArrayUtils', () => {
     expect(res).toContain(cuadrado);
   }));
 
+  it('Debe devolver 2 elementos de complemento y debe ser un Circulo y un Cuadrado' , async(() => {
+    let circulo = new Circulo();
+    let cuadrado = new Cuadrado();
+    let triangulo = new Trinangulo();
+    let arrayTestSurce: Array<Shape> = [triangulo];
+    let arrayTestTarget: Array<Shape> = [circulo, cuadrado];
+    let res = ArrayUtils.complement(arrayTestSurce, arrayTestTarget);
+    console.log('el complemento entre los array es: ',res)
+    expect(res.length).toBe(2);
+    expect(res).toContain(circulo);
+    expect(res).toContain(cuadrado);
+  }));
+
+
 
 });
 
@@ -185,5 +199,12 @@ class Cuadrado extends Shape {
   constructor () {
     super();
     this.tipo = 'Cuadrado';
+  }
+}
+
+class Trinangulo extends Shape {
+  constructor () {
+    super();
+    this.tipo = 'Triangulo';
   }
 }
