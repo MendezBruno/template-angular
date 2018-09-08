@@ -44,6 +44,7 @@ import { FunctionSatisfyDirective } from './directives/function-satisfy.directiv
 import { ReactiveFormOneComponent } from './vistas/forms/reactive-form-one/reactive-form-one.component';
 import { DropLoadFileComponent } from './commons-components/drop-load-file/drop-load-file.component';
 import { CommonsViewComponent } from './vistas/shared-components/commons-view/commons-view.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 
 @NgModule({
@@ -78,6 +79,7 @@ import { CommonsViewComponent } from './vistas/shared-components/commons-view/co
     ReactiveFormOneComponent,
     DropLoadFileComponent,
     CommonsViewComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
