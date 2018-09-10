@@ -15,6 +15,7 @@ import { MercadoPagoTestComponent } from '../vistas/mercado-pago-test/mercado-pa
 import { MonoOrgComponent } from '../vistas/principales/mono-org/mono-org.component';
 import { ReactiveFormOneComponent } from '../vistas/forms/reactive-form-one/reactive-form-one.component';
 import { CommonsViewComponent } from '../vistas/shared-components/commons-view/commons-view.component';
+import { SpinnerTestComponent } from '../vistas/tests/spinner-test/spinner-test.component';
 
 
 const appRoutes: Routes = [
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
   { path: 'vistas/forms/user', component: UserComponent },
   { path: 'vistas/forms/turnos', component: TurnosComponent },
   { path: 'vistas/forms/userGoogleMap', component: UserGoogleMapsComponent },
-  { path: 'vistas/mercado-pago-test', component: MercadoPagoTestComponent },
+  { path: 'vistas/mercado-pago-test', component: MercadoPagoTestComponent }, 
+  { path: 'vistas/tests/spinnerTests', component: SpinnerTestComponent },
   { path: 'vistas/forms/reactive-form-one', component: ReactiveFormOneComponent },
   { path: 'login/face-google', component: FaceGoogleComponent },
   { path: 'login/login-admin', component: LoginAdminComponent },

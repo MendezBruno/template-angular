@@ -1,17 +1,27 @@
 import { Injectable } from '@angular/core';
-import { Subscription, BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
+
+@Injectable()
 export class CommunicationService {
 
-  private observerSpinner$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
-  observerSpinner: Observable<boolean> = this.observerSpinner$.asObservable();
+  private observerSpinner:BehaviorSubject<SpinnerClass> = new BehaviorSubject<SpinnerClass>(new SpinnerClass(false, ''));
+  observerSpinner$: Observable<SpinnerClass> = this.observerSpinner.asObservable();
 
   constructor() { }
 
-  spinnerChangueState(value: boolean) {
-    this.observerSpinner$.next(value);
+  spinnerChangueState(value: SpinnerClass) {
+    this.observerSpinner.next(value);
   }
 }
+
+
+
+class SpinnerClass {
+  bool: boolean;
+  servicio: string;
+  constructor(bool, servicio) {
+    this.bool = bool;
+    this.servicio = servicio;
+  }
+} 

@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from "@angular/core";
-import { Mes } from "../meses";
-import { Utilitarios } from "../Utilitarios";
+import { Utilitarios } from "../utils/Utilitarios";
+import { Mes } from "../model/data/meses";
 
 /**
  * Convierte la fecha AAAA-MM-DD a DD-MES

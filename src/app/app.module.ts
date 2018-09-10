@@ -45,6 +45,8 @@ import { ReactiveFormOneComponent } from './vistas/forms/reactive-form-one/react
 import { DropLoadFileComponent } from './commons-components/drop-load-file/drop-load-file.component';
 import { CommonsViewComponent } from './vistas/shared-components/commons-view/commons-view.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { SpinnerTestComponent } from './vistas/tests/spinner-test/spinner-test.component';
+import { CommunicationService } from './services/communication.service';
 
 
 @NgModule({
@@ -80,6 +82,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     DropLoadFileComponent,
     CommonsViewComponent,
     SpinnerComponent,
+    SpinnerTestComponent,
   ],
   imports: [
     BrowserModule,
@@ -95,7 +98,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     MatDatepickerModule,
     MatNativeDateModule
   ],
-  providers: [],
+  providers: [CommunicationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
