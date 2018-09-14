@@ -144,7 +144,15 @@ export class ArrayUtils {
     }
 
     
-    
+    /**
+     * vacia el array origen
+     * @param arraySurce el array que se quiere vaciar
+     * @returns El array origen vacio
+     */
+    static clearArray<T>(arraySurce: Array<T>[]): Array<any>{
+        arraySurce.length = 0;
+        return arraySurce;
+      }
 
 
     
