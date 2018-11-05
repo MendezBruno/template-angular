@@ -47,6 +47,7 @@ import { CommonsViewComponent } from './vistas/shared-components/commons-view/co
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { SpinnerTestComponent } from './vistas/tests/spinner-test/spinner-test.component';
 import { CommunicationService } from './services/communication.service';
+import { DesplegableButtonComponent } from './components/buttons/desplegable-button/desplegable-button.component';
 
 
 @NgModule({
@@ -83,6 +84,7 @@ import { CommunicationService } from './services/communication.service';
     CommonsViewComponent,
     SpinnerComponent,
     SpinnerTestComponent,
+    DesplegableButtonComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,9 @@
+<div class="desplegable">
+  <div>
+    <button class="btn buttons" [ngClass]="setClases" (click)="eventClickButton()" > clik me Super!</button>
+    <img src="../../../../assets/icons/arrow_down-24px.svg" (click)="toggleButton()" >
+  </div>
+  <div>
+    <button class="btn buttons" [ngClass]="setClases" (click)="eventClickSubButton()" *ngIf="subButton" > clik me Over!</button>
+  </div>  
+</div>
