@@ -1,0 +1,13 @@
+.desplegable {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.desplegable>div {
+    flex: 1 0 50%;
+  }
+  
+  .desplegable>div:first-child {
+    flex: 0 1 100%;
+  }
