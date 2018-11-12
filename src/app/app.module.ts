@@ -48,6 +48,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { SpinnerTestComponent } from './vistas/tests/spinner-test/spinner-test.component';
 import { CommunicationService } from './services/communication.service';
 import { DesplegableButtonComponent } from './components/buttons/desplegable-button/desplegable-button.component';
+import { CalendarioComponent } from './commons-components/calendario/calendario.component';
 
 
 @NgModule({
@@ -85,6 +86,7 @@ import { DesplegableButtonComponent } from './components/buttons/desplegable-but
     SpinnerComponent,
     SpinnerTestComponent,
     DesplegableButtonComponent,
+    CalendarioComponent,
   ],
   imports: [
     BrowserModule,
