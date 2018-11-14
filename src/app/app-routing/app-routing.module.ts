@@ -16,6 +16,7 @@ import { MonoOrgComponent } from '../vistas/principales/mono-org/mono-org.compon
 import { ReactiveFormOneComponent } from '../vistas/forms/reactive-form-one/reactive-form-one.component';
 import { CommonsViewComponent } from '../vistas/shared-components/commons-view/commons-view.component';
 import { SpinnerTestComponent } from '../vistas/tests/spinner-test/spinner-test.component';
+import { CssTestComponent } from '../vistas/tests/css-test/css-test.component';
 
 
 const appRoutes: Routes = [
@@ -28,13 +29,14 @@ const appRoutes: Routes = [
   { path: 'vistas/forms/turnos', component: TurnosComponent },
   { path: 'vistas/forms/userGoogleMap', component: UserGoogleMapsComponent },
   { path: 'vistas/mercado-pago-test', component: MercadoPagoTestComponent }, 
-  { path: 'vistas/tests/spinnerTests', component: SpinnerTestComponent },
   { path: 'vistas/forms/reactive-form-one', component: ReactiveFormOneComponent },
+  { path: 'vistas/tests/spinnerTests', component: SpinnerTestComponent },
+  { path: 'vistas/tests/cssTest', component: CssTestComponent },
+  { path: 'vistas/principales/monoOrg', component: MonoOrgComponent },
+  { path: 'vistas/components/commons', component: CommonsViewComponent },
   { path: 'login/face-google', component: FaceGoogleComponent },
   { path: 'login/login-admin', component: LoginAdminComponent },
   { path: 'login/user-password', component: UserPasswordComponent },
-  { path: 'vistas/principales/monoOrg', component: MonoOrgComponent },
-  { path: 'vistas/components/commons', component: CommonsViewComponent },
 
 
 

@@ -1,0 +1,36 @@
+.battery {
+	position: relative;
+	display: block;
+	margin: 35px 0 0 5px;
+	background: #141111;
+	width: 50px;
+	height: 28px;
+  float: left;
+  margin-left: 250px;
+}
+
+.battery:before {
+	content: "";
+	display: block;
+	background: transparent;
+	border: 6px solid #141111;
+	margin: -12px;
+	width: 85px;
+	height: 40px;
+	position: absolute;
+	border-radius: 2px;
+}
+
+.battery:after {
+	content: "";
+	display: block;
+	background: transparent;
+	border: 6px solid #141111;
+	margin: 0px 80px;
+	width: 6px;
+	height: 16px;
+	position: absolute;
+	border-radius: 2px;
+}
+
+.battery.empty { width: 10px; }

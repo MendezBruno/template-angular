@@ -8,9 +8,10 @@ export const ArrayVistas = [
     'vistas/forms/reactive-form-one',
     'vistas/components/commons',
     'vistas/tests/spinnerTests',
+    'vistas/tests/cssTest',
+    'vistas/mercado-pago-test',
+    'vistas/principales/monoOrg',
     'login/face-google',
     'login/login-admin',
     'login/user-password',
-    'vistas/mercado-pago-test',
-    'vistas/principales/monoOrg',
 ];
