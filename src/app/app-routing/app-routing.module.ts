@@ -17,6 +17,7 @@ import { ReactiveFormOneComponent } from '../vistas/forms/reactive-form-one/reac
 import { CommonsViewComponent } from '../vistas/shared-components/commons-view/commons-view.component';
 import { SpinnerTestComponent } from '../vistas/tests/spinner-test/spinner-test.component';
 import { CssTestComponent } from '../vistas/tests/css-test/css-test.component';
+import { FutbolHoyComponent } from '../vistas/principales/futbol-hoy/futbol-hoy.component';
 
 
 const appRoutes: Routes = [
@@ -34,6 +35,7 @@ const appRoutes: Routes = [
   { path: 'vistas/tests/cssTest', component: CssTestComponent },
   { path: 'vistas/principales/monoOrg', component: MonoOrgComponent },
   { path: 'vistas/components/commons', component: CommonsViewComponent },
+  { path: 'vistas/principales/futbol-hoy', component: FutbolHoyComponent },
   { path: 'login/face-google', component: FaceGoogleComponent },
   { path: 'login/login-admin', component: LoginAdminComponent },
   { path: 'login/user-password', component: UserPasswordComponent },

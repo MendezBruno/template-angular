@@ -52,6 +52,7 @@ import { PedidosComponent } from './vistas/principales/pedidos/pedidos.component
 import { CalendarioComponent } from './commons-components/calendario/calendario.component';
 import { CssTestComponent } from './vistas/tests/css-test/css-test.component';
 import { BateryComponent } from './components/css/batery/batery.component';
+import { EstadosComponent } from './components/css/estados/estados.component';
 
 
 @NgModule({
@@ -93,6 +94,7 @@ import { BateryComponent } from './components/css/batery/batery.component';
     CalendarioComponent,
     CssTestComponent,
     BateryComponent,
+    EstadosComponent,
   ],
   imports: [
     BrowserModule,

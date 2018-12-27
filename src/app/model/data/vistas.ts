@@ -7,6 +7,7 @@ export const ArrayVistas = [
     'vistas/forms/userGoogleMap',
     'vistas/forms/reactive-form-one',
     'vistas/components/commons',
+    'vistas/principales/futbol-hoy',
     'vistas/tests/spinnerTests',
     'vistas/tests/cssTest',
     'vistas/mercado-pago-test',
