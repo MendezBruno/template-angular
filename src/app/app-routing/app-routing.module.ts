@@ -33,6 +33,7 @@ const appRoutes: Routes = [
   { path: 'vistas/forms/reactive-form-one', component: ReactiveFormOneComponent },
   { path: 'vistas/tests/spinnerTests', component: SpinnerTestComponent },
   { path: 'vistas/tests/cssTest', component: CssTestComponent },
+  { path: 'vistas/tests/monoCanvas', component: CssTestComponent },
   { path: 'vistas/principales/monoOrg', component: MonoOrgComponent },
   { path: 'vistas/components/commons', component: CommonsViewComponent },
   { path: 'vistas/principales/futbol-hoy', component: FutbolHoyComponent },

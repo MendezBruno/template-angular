@@ -53,6 +53,7 @@ import { CalendarioComponent } from './commons-components/calendario/calendario.
 import { CssTestComponent } from './vistas/tests/css-test/css-test.component';
 import { BateryComponent } from './components/css/batery/batery.component';
 import { EstadosComponent } from './components/css/estados/estados.component';
+import { MonoCanvasComponent } from './vistas/tests/mono-canvas/mono-canvas.component';
 
 
 @NgModule({
@@ -95,6 +96,7 @@ import { EstadosComponent } from './components/css/estados/estados.component';
     CssTestComponent,
     BateryComponent,
     EstadosComponent,
+    MonoCanvasComponent,
   ],
   imports: [
     BrowserModule,
