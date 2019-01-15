@@ -22,12 +22,13 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
+    this.draw();
   }
 
   draw() {
     this.ctx = this.canvasRef.nativeElement.getContext('2d');
-    this.ctx.clearRect(0, 0, Number(this.wsize), Number(this.hsize));
-   
-}
+    this.ctx.strokeRect(50,50,50,50);
+    this.ctx.fillRect(25,25,100,100)
+  }
 
 }
