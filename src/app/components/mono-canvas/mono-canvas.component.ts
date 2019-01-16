@@ -12,8 +12,8 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
 
   public ctx: CanvasRenderingContext2D;
 
-  wsize='150';
-  hsize='150';
+  wsize = '150';
+  hsize = '150';
 
   constructor() { }
 
@@ -27,8 +27,8 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
 
   draw() {
     this.ctx = this.canvasRef.nativeElement.getContext('2d');
-    this.ctx.strokeRect(50,50,50,50);
-    this.ctx.fillRect(25,25,100,100)
+    this.ctx.strokeRect(50, 50, 50, 50);
+    this.ctx.fillRect(25, 25, 100, 100);
   }
 
 }

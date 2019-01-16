@@ -18,7 +18,7 @@ import { CommonsViewComponent } from '../vistas/shared-components/commons-view/c
 import { SpinnerTestComponent } from '../vistas/tests/spinner-test/spinner-test.component';
 import { CssTestComponent } from '../vistas/tests/css-test/css-test.component';
 import { FutbolHoyComponent } from '../vistas/principales/futbol-hoy/futbol-hoy.component';
-import { MonoCanvasComponent } from '../vistas/tests/mono-canvas/mono-canvas.component';
+import { VistaCanvasComponent } from '../vistas/tests/vista-canvas/vista-canvas.component';
 
 
 const appRoutes: Routes = [
@@ -30,11 +30,11 @@ const appRoutes: Routes = [
   { path: 'vistas/forms/user', component: UserComponent },
   { path: 'vistas/forms/turnos', component: TurnosComponent },
   { path: 'vistas/forms/userGoogleMap', component: UserGoogleMapsComponent },
-  { path: 'vistas/mercado-pago-test', component: MercadoPagoTestComponent }, 
+  { path: 'vistas/mercado-pago-test', component: MercadoPagoTestComponent },
   { path: 'vistas/forms/reactive-form-one', component: ReactiveFormOneComponent },
   { path: 'vistas/tests/spinnerTests', component: SpinnerTestComponent },
   { path: 'vistas/tests/cssTest', component: CssTestComponent },
-  { path: 'vistas/tests/monoCanvas', component: MonoCanvasComponent },
+  { path: 'vistas/tests/vistaCanvas', component: VistaCanvasComponent },
   { path: 'vistas/principales/monoOrg', component: MonoOrgComponent },
   { path: 'vistas/components/commons', component: CommonsViewComponent },
   { path: 'vistas/principales/futbol-hoy', component: FutbolHoyComponent },

@@ -53,7 +53,9 @@ import { CalendarioComponent } from './commons-components/calendario/calendario.
 import { CssTestComponent } from './vistas/tests/css-test/css-test.component';
 import { BateryComponent } from './components/css/batery/batery.component';
 import { EstadosComponent } from './components/css/estados/estados.component';
-import { MonoCanvasComponent } from './vistas/tests/mono-canvas/mono-canvas.component';
+import { MonoCanvasComponent } from './components/mono-canvas/mono-canvas.component';
+import { VistaCanvasComponent } from './vistas/tests/vista-canvas/vista-canvas.component';
+
 
 
 @NgModule({
@@ -97,6 +99,7 @@ import { MonoCanvasComponent } from './vistas/tests/mono-canvas/mono-canvas.comp
     BateryComponent,
     EstadosComponent,
     MonoCanvasComponent,
+    VistaCanvasComponent,
   ],
   imports: [
     BrowserModule,

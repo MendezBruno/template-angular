@@ -10,7 +10,7 @@ export const ArrayVistas = [
     'vistas/principales/futbol-hoy',
     'vistas/tests/spinnerTests',
     'vistas/tests/cssTest',
-    'vistas/tests/monoCanvas',
+    'vistas/tests/vistaCanvas',
     'vistas/mercado-pago-test',
     'vistas/principales/monoOrg',
     'login/face-google',
