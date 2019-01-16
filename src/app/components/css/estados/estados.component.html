@@ -1,0 +1,6 @@
+<div class="estados"  [style.color]="theColor">
+  <p> {{model.estado}} </p>
+  <div class="circulos" >
+    <div *ngFor= "let circulo of model.circulos" [className]="circ" [style.background]="theColor" >  </div>
+  </div>
+</div>

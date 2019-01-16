@@ -48,7 +48,12 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { SpinnerTestComponent } from './vistas/tests/spinner-test/spinner-test.component';
 import { CommunicationService } from './services/communication.service';
 import { DesplegableButtonComponent } from './components/buttons/desplegable-button/desplegable-button.component';
+import { PedidosComponent } from './vistas/principales/pedidos/pedidos.component';
 import { CalendarioComponent } from './commons-components/calendario/calendario.component';
+import { CssTestComponent } from './vistas/tests/css-test/css-test.component';
+import { BateryComponent } from './components/css/batery/batery.component';
+import { EstadosComponent } from './components/css/estados/estados.component';
+import { MonoCanvasComponent } from './vistas/tests/mono-canvas/mono-canvas.component';
 
 
 @NgModule({
@@ -86,7 +91,12 @@ import { CalendarioComponent } from './commons-components/calendario/calendario.
     SpinnerComponent,
     SpinnerTestComponent,
     DesplegableButtonComponent,
+    PedidosComponent,
     CalendarioComponent,
+    CssTestComponent,
+    BateryComponent,
+    EstadosComponent,
+    MonoCanvasComponent,
   ],
   imports: [
     BrowserModule,
