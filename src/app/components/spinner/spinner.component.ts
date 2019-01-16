@@ -12,7 +12,7 @@ import { timeout } from 'q';
 export class SpinnerComponent implements OnInit {
 
   @Input() mostrar: boolean;
-  @Input() timeout: number = 20000;
+  @Input() timeout = 20000;
   spinnerSubcription: Subscription;
   acumA: string[] = [];
   timeoutVariable;
@@ -23,10 +23,10 @@ export class SpinnerComponent implements OnInit {
     this.spinnerSubcription = this.communicationService.observerSpinner$.subscribe(
       (value: any) => {
         // if (value.servicio == "bepa") { return }
-        if (this.timeoutVariable) { 
-          clearTimeout(this.timeoutVariable)
+        if (this.timeoutVariable) {
+          clearTimeout(this.timeoutVariable);
         }
-        this.timeoutVariable = setTimeout(() => {this.mostrar = false}, this.timeout);
+        this.timeoutVariable = setTimeout(() => {this.mostrar = false; } , this.timeout);
         value.bool ? this.acumA.push(value.servicio) : ArrayUtils.remove(this.acumA, value.servicio);
         console.log('Los LLamados acumulados son: ', this.acumA);
         if (this.acumA.length === 0 && !value.bool) {this.mostrar = false; }
