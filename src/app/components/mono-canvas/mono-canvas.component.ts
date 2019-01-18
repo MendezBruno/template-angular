@@ -12,67 +12,75 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
 
   public ctx: CanvasRenderingContext2D;
 
-  
-  // Tamaño del Lienzo
-  wsize = 150;
-  hsize = 150;
 
-  //Margenes de los ejes de coordenadas
+  // Tamaño del Lienzo
+  wsize = 400;
+  hsize = 200;
+
+  // Margenes de los ejes de coordenadas
   margenY = 15;
   margenX = 20;
 
   // Origne del eje de coordenadas
-  origenX = this.margenX; 
+  origenX = this.margenX;
   origenY = this.hsize - this.margenY;
 
-  //opciones de el texto
-  font: string = "10pt Verdana";
-  textAling: string = "center";
-  textLineWidth: number = 1;
-  iteracion: number = 5;
-  
+  // opciones de el texto
+  font = '7pt Verdana';
+  textAling = 'center';
+  textLineWidth = 4;
+  iteracion = 15;
+  pointSize = 2;
+
 
   constructor() { }
 
   ngAfterViewInit() {
     this.inicializarCanvas();
-    
+
   }
 
   // Dibuja el grafico
   inicializarCanvas(): any {
     this.ctx = this.canvasRef.nativeElement.getContext('2d');
     // Eje X
-    this.drawLine(this.origenX , this.origenY - this.margenY , this.wsize , this.origenY - this.margenY);
+    this.drawLine(this.origenX , this.origenY , this.wsize , this.origenY);
 
     // Eje y
-    this.drawLine(this.origenX , this.origenY - this.margenY , this.origenX , this.hsize - this.origenY);
+    this.drawLine(this.origenX , this.origenY , this.origenX , this.hsize - this.origenY);
 
-    //labels 
-    for(let i,label= 0; i <= (this.wsize / this.iteracion); i++) {
-
+    // labels
+    let label = 0;
+    const veces = (this.wsize / this.iteracion);
+    console.log(veces);
+    this.text( label.toString() , this.origenX + label, this.origenY + this.margenY);
+    for (let i = 0; i <= veces ; i++) {
       // para el eje X
-      this.text( label.toString() ,this.origenX + label, this.origenY);
+      this.text( label.toString() , this.origenX + label, this.origenY + this.margenY);
       label = label + this.iteracion;
 
     }
+
+    this.drawCoordinates(this.origenX , this.origenY - 10);
+    this.drawCoordinates(this.origenX + 15 , this.origenY - 10);
+    this.drawCoordinates(this.origenX + 30 , this.origenY - 10);
   }
 
   ngOnInit() { }
 
-  drawLine(startX, startY, endX, endY){
- 
+  drawLine(startX, startY, endX, endY) {
+
     this.ctx.beginPath();
- 
-    this.ctx.moveTo(startX,startY);
- 
-    this.ctx.lineTo(endX,endY);
- 
-    this.ctx.stroke()
+
+    this.ctx.moveTo(startX, startY);
+
+    this.ctx.lineTo(endX, endY);
+
+    this.ctx.stroke();
   }
 
-  setLineWidth( width:number ) {
-    //Indicar el grosor de la línea
+  setLineWidth( width: number ) {
+    // Indicar el grosor de la línea
     this.ctx.lineWidth = width;
   }
 
@@ -92,13 +100,20 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
 
   text(labelsText: string, positionX: number, positionY: number) {
     if (this.ctx) {
-      this.ctx.textAlign= this.textAling;
-      this.ctx.font= this.font;
+      this.ctx.textAlign = 'center';
+      this.ctx.font = this.font;
       // this.ctx.fillStyle = "blue";   color de la letra
       this.ctx.lineWidth = this.textLineWidth;
       this.ctx.fillText(labelsText, positionX, positionY);
     }
   }
+
+  drawCoordinates(x: number, y: number) {
+    this.ctx.fillStyle = '#0c0c0c'; // Red color
+    this.ctx.beginPath();
+    this.ctx.arc(x, y, this.pointSize, 0, Math.PI * 2, true);
+    this.ctx.fill();
+}
 
 
 
