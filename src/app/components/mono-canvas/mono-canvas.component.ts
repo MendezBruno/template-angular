@@ -14,16 +14,20 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
 
 
   // Tamaño del Lienzo
-  wsize = 400;
-  hsize = 200;
+  wsize = 600;
+  hsize = 400;
 
   // Margenes de los ejes de coordenadas
   margenY = 15;
   margenX = 20;
 
   // Origne del eje de coordenadas
+  factorEscalaX: number = 600;
+  factorEscalaY: number = 400;
   origenX = this.margenX;
   origenY = this.hsize - this.margenY;
+  escalaX = this.wsize / this.factorEscalaX;
+  escalaY = this.hsize / this.factorEscalaY;
 
   // opciones de el texto
   font = '7pt Verdana';
@@ -61,9 +65,9 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
 
     }
 
-    this.drawCoordinates(this.origenX , this.origenY - 10);
-    this.drawCoordinates(this.origenX + 15 , this.origenY - 10);
-    this.drawCoordinates(this.origenX + 30 , this.origenY - 10);
+    this.drawCoordinates(0, 10);
+    this.drawCoordinates(15 , 10);
+    this.drawCoordinates(30 , 10);
   }
 
   ngOnInit() { }
@@ -108,10 +112,10 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
     }
   }
 
-  drawCoordinates(x: number, y: number) {
+  drawCoordinates(unidadX: number, unidadY: number) {
     this.ctx.fillStyle = '#0c0c0c'; // Red color
     this.ctx.beginPath();
-    this.ctx.arc(x, y, this.pointSize, 0, Math.PI * 2, true);
+    this.ctx.arc(this.origenX + unidadX * this.escalaX, this.origenY - unidadY * this.escalaY, this.pointSize, 0, Math.PI * 2, true);
     this.ctx.fill();
 }
 
