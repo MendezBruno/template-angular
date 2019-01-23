@@ -1,0 +1,68 @@
+.turnbutton {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: sans-serif;
+}
+.toggle{
+    position:relative;
+    border: solid 2px #e43838;
+    border-radius:23px;
+    transition: transform cubic-bezier(0,0,0.30,2) .4s;
+    transform-style:preserve-3d;
+    perspective:400px;
+}
+.toggle>input[type="radio"]{
+    display:none;
+}
+.toggle > #but1:checked ~ #flap{
+    transform:rotateY(-180deg);
+}
+.toggle > #but1:checked ~ #flap > .content{
+    transform:rotateY(-180deg)
+}
+.toggle > #but2:checked ~ #flap {
+    transform: rotateY(0deg);
+}
+.toggle > label{
+    display:inline-block;
+    min-width:50px;
+    padding:15px;
+    font-size:15px;
+    text-align:center;
+    color:#e43838;
+    cursor:pointer;
+}
+.toggle > label,
+.toggle > #flap{
+    font-weight:bold;
+    text-transform:capitalize;
+}
+.toggle > #flap{
+    position: absolute;
+    top: calc(-2px - 0px);
+    left: 51%;
+    height: calc(108% );
+    width: 52%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: #e43838;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    transition: -webkit-transform cubic-bezier(0.4,0,0.2,1) .5s;
+    transition: transform cubic-bezier(0.4,0,0.2,1) .5s;
+    transition: transform cubic-bezier(0.4,0,0.2,1) .5s, -webkit-transform cubic-bezier(0.4,0,0.2,1) .5s;
+}
+.toggle > #flap > .content{
+    color:#262626;
+    transition:transform 0s linear .25s;
+    transform-style:preserve-3d; 
+}
