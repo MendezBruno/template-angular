@@ -33,7 +33,8 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
   font = '7pt Verdana';
   textAling = 'center';
   textLineWidth = 4;
-  iteracion = 15;
+  iteracionX = 15;
+  iteracionY = 15;
   pointSize = 2;
 
 
@@ -55,14 +56,20 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
 
     // labels
     let label = 0;
-    const veces = (this.wsize / this.iteracion);
-    console.log(veces);
-    this.text( label.toString() , this.origenX + label, this.origenY + this.margenY);
+    let veces = (this.wsize / this.iteracionX);
+    // this.text( label.toString() , this.origenX + label, this.origenY + this.margenY);
     for (let i = 0; i <= veces ; i++) {
       // para el eje X
       this.text( label.toString() , this.origenX + label, this.origenY + this.margenY);
-      label = label + this.iteracion;
+      label = label + this.iteracionX;
+    }
 
+    label = 0;
+    veces = (this.hsize / this.iteracionY);
+    for (let i = 0; i <= veces; i++) {
+      // para el eje X
+      this.text( label.toString() , this.origenX + this.margenX, this.origenY - label);
+      label = label + this.iteracionY;
     }
 
     this.drawCoordinates(0, 10);

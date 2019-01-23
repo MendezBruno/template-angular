@@ -55,6 +55,7 @@ import { BateryComponent } from './components/css/batery/batery.component';
 import { EstadosComponent } from './components/css/estados/estados.component';
 import { MonoCanvasComponent } from './components/mono-canvas/mono-canvas.component';
 import { VistaCanvasComponent } from './vistas/tests/vista-canvas/vista-canvas.component';
+import { TurnButtonComponent } from './components/buttons/turn-button/turn-button.component';
 
 
 
@@ -100,6 +101,7 @@ import { VistaCanvasComponent } from './vistas/tests/vista-canvas/vista-canvas.c
     EstadosComponent,
     MonoCanvasComponent,
     VistaCanvasComponent,
+    TurnButtonComponent,
   ],
   imports: [
     BrowserModule,
