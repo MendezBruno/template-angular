@@ -22,7 +22,7 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
   margenX = 20;
 
   // Origne del eje de coordenadas
-  factorEscalaX: number = 600;
+  factorEscalaX: number = 20;
   factorEscalaY: number = 400;
   origenX = this.margenX;
   origenY = this.hsize - this.margenY;
@@ -33,7 +33,7 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
   font = '7pt Verdana';
   textAling = 'center';
   textLineWidth = 4;
-  iteracionX = 15;
+  iteracionX = 30;
   iteracionY = 15;
   pointSize = 2;
 
@@ -56,19 +56,21 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
 
     // labels
     let label = 0;
+    let sumIteration = 0;
     let veces = (this.wsize / this.iteracionX);
     // this.text( label.toString() , this.origenX + label, this.origenY + this.margenY);
     for (let i = 0; i <= veces ; i++) {
       // para el eje X
-      this.text( label.toString() , this.origenX + label, this.origenY + this.margenY);
+      this.text( ( Math.round( label / this.escalaX)).toString() , this.origenX + sumIteration, this.origenY + this.margenY);
+      sumIteration = sumIteration + this.iteracionX;
       label = label + this.iteracionX;
     }
 
     label = 0;
     veces = (this.hsize / this.iteracionY);
     for (let i = 0; i <= veces; i++) {
-      // para el eje X
-      this.text( label.toString() , this.origenX + this.margenX, this.origenY - label);
+      // para el eje Y
+      this.text( label.toString() , this.origenX - (this.margenX / 2), this.origenY - label);
       label = label + this.iteracionY;
     }
 
