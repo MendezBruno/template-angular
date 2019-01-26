@@ -27,3 +27,4 @@ class LabelOptions {
     this.fontSize = size + ' ' + this.fontText;
   }
 }
+

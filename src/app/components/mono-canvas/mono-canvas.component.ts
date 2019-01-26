@@ -23,7 +23,7 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
 
   // Origne del eje de coordenadas
   factorEscalaX: number = 20;
-  factorEscalaY: number = 400;
+  factorEscalaY: number = 10;
   origenX = this.margenX;
   origenY = this.hsize - this.margenY;
   escalaX = this.wsize / this.factorEscalaX;
@@ -34,7 +34,7 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
   textAling = 'center';
   textLineWidth = 4;
   iteracionX = 30;
-  iteracionY = 15;
+  iteracionY = 40;
   pointSize = 2;
 
 
@@ -67,16 +67,18 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
     }
 
     label = 0;
+    sumIteration = 0; 
     veces = (this.hsize / this.iteracionY);
     for (let i = 0; i <= veces; i++) {
       // para el eje Y
-      this.text( label.toString() , this.origenX - (this.margenX / 2), this.origenY - label);
+      this.text( ( Math.round( label / this.escalaY)).toString()  , this.origenX - (this.margenX / 2), this.origenY - sumIteration);
+      sumIteration = sumIteration + this.iteracionY
       label = label + this.iteracionY;
     }
 
-    this.drawCoordinates(0, 10);
-    this.drawCoordinates(15 , 10);
-    this.drawCoordinates(30 , 10);
+    this.drawCoordinates(0, 5);
+    this.drawCoordinates(15 , 5);
+    this.drawCoordinates(30 , 5);
   }
 
   ngOnInit() { }
@@ -113,7 +115,7 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
 
   text(labelsText: string, positionX: number, positionY: number) {
     if (this.ctx) {
-      this.ctx.textAlign = 'center';
+      this.ctx.textAlign = 'center'
       this.ctx.font = this.font;
       // this.ctx.fillStyle = "blue";   color de la letra
       this.ctx.lineWidth = this.textLineWidth;
