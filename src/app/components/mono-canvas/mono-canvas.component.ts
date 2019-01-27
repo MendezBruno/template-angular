@@ -18,7 +18,7 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
   hsize = 400;
 
   // Margenes de los ejes de coordenadas
-  margenY = 15;
+  margenY = 20;
   margenX = 20;
 
   // Origne del eje de coordenadas
@@ -48,6 +48,9 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
   // Dibuja el grafico
   inicializarCanvas(): any {
     this.ctx = this.canvasRef.nativeElement.getContext('2d');
+    this.ctx.fillStyle = 'white';
+    this.ctx.strokeStyle = 'white';
+
     // Eje X
     this.drawLine(this.origenX , this.origenY , this.wsize , this.origenY);
 
@@ -61,18 +64,18 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
     // this.text( label.toString() , this.origenX + label, this.origenY + this.margenY);
     for (let i = 0; i <= veces ; i++) {
       // para el eje X
-      this.text( ( Math.round( label / this.escalaX)).toString() , this.origenX + sumIteration, this.origenY + this.margenY);
+      this.text( ( Math.round( label / this.escalaX)).toString() , this.origenX + sumIteration, this.origenY + (this.margenY / 2) );
       sumIteration = sumIteration + this.iteracionX;
       label = label + this.iteracionX;
     }
 
     label = 0;
-    sumIteration = 0; 
+    sumIteration = 0;
     veces = (this.hsize / this.iteracionY);
     for (let i = 0; i <= veces; i++) {
       // para el eje Y
       this.text( ( Math.round( label / this.escalaY)).toString()  , this.origenX - (this.margenX / 2), this.origenY - sumIteration);
-      sumIteration = sumIteration + this.iteracionY
+      sumIteration = sumIteration + this.iteracionY;
       label = label + this.iteracionY;
     }
 
@@ -99,36 +102,27 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit {
     this.ctx.lineWidth = width;
   }
 
-  // comparador(fecha1,fecha2) {
-  //   let aFecha1, aFecha2;
-  //   let i: number = 0;
-  //   aFecha1 = fecha1.split('-')
-  //   aFecha2 = fecha2.split('-')
 
-  //   while (aFecha1.length < i ) {
-  //     if  (Number(aFecha1[i]) < Number(aFecha2[i])) return -1;
-  //     if  (Number(aFecha1[i]) > Number(aFecha2[i])) return 1;
-  //   }
-
-  //   return 0
-  // }
 
   text(labelsText: string, positionX: number, positionY: number) {
     if (this.ctx) {
-      this.ctx.textAlign = 'center'
+      this.ctx.textAlign = 'center';
       this.ctx.font = this.font;
-      // this.ctx.fillStyle = "blue";   color de la letra
+
       this.ctx.lineWidth = this.textLineWidth;
       this.ctx.fillText(labelsText, positionX, positionY);
     }
   }
 
   drawCoordinates(unidadX: number, unidadY: number) {
-    this.ctx.fillStyle = '#0c0c0c'; // Red color
     this.ctx.beginPath();
     this.ctx.arc(this.origenX + unidadX * this.escalaX, this.origenY - unidadY * this.escalaY, this.pointSize, 0, Math.PI * 2, true);
     this.ctx.fill();
-}
+  }
+
+  setColorBackgroud ( color) {
+    this.canvasRef.nativeElement.style.background = color;
+  }
 
 
 
