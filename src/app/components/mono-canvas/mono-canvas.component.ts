@@ -1,129 +1,82 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { ESolarChart, ESOLARCOLOR, Point, GenericDatasetPoints } from './model';
 
 @Component({
   selector: 'app-mono-canvas',
   templateUrl: './mono-canvas.component.html',
   styleUrls: ['./mono-canvas.component.css']
 })
-export class MonoCanvasComponent implements OnInit, AfterViewInit {
+export class MonoCanvasComponent implements OnInit, AfterViewInit, OnChanges {
 
   @ViewChild('grafico')
   canvasRef: ElementRef;
 
+  theData: GenericDatasetPoints = new GenericDatasetPoints();
   public ctx: CanvasRenderingContext2D;
+  public esolarChart: ESolarChart;
 
 
+  @Input() widthCanvas: number;
+  @Input() heightCanvas: number;
   // Tamaño del Lienzo
   wsize = 600;
   hsize = 400;
 
-  // Margenes de los ejes de coordenadas
-  margenY = 20;
-  margenX = 20;
+  constructor ( ) { }
 
-  // Origne del eje de coordenadas
-  factorEscalaX: number = 20;
-  factorEscalaY: number = 10;
-  origenX = this.margenX;
-  origenY = this.hsize - this.margenY;
-  escalaX = this.wsize / this.factorEscalaX;
-  escalaY = this.hsize / this.factorEscalaY;
-
-  // opciones de el texto
-  font = '7pt Verdana';
-  textAling = 'center';
-  textLineWidth = 4;
-  iteracionX = 30;
-  iteracionY = 40;
-  pointSize = 2;
-
-
-  constructor() { }
+  ngOnChanges(changes: SimpleChanges) {
+    if ( this.widthCanvas && this.heightCanvas && changes.currentValue) {
+      this.widthCanvas = changes.widthCanvas.currentValue;
+      this.heightCanvas = changes.heightCanvas.currentValue;
+      this.setFormatGraph( this.widthCanvas, this.heightCanvas );
+    }
+    this.showLineChart();
+  }
 
   ngAfterViewInit() {
-    this.inicializarCanvas();
-
+    this.showLineChart();
   }
 
-  // Dibuja el grafico
-  inicializarCanvas(): any {
+  setFormatGraph(widthCanvas: number, heightCanvas: number): any {
+    this.hsize = heightCanvas;
+    this.wsize = widthCanvas;
+  }
+
+  showLineChart(): any {
     this.ctx = this.canvasRef.nativeElement.getContext('2d');
-    this.ctx.fillStyle = 'white';
-    this.ctx.strokeStyle = 'white';
+    this.esolarChart = new ESolarChart(this.hsize, this.wsize);
+    this.esolarChart.inicializarCanvas(this.ctx);
+    this.esolarChart.setLineWidth(2);
+    this.esolarChart.setLineColor(ESOLARCOLOR.BLUE);
+    // this.esolarChart.setFactorEscalas( this.getXMax(this.theData.dataset), this.getYMax(this.theData.dataset) )
+    // this.theData.dataset.forEach ( p => this.esolarChart.drawCoordinates(p.x, p.y) );
 
-    // Eje X
-    this.drawLine(this.origenX , this.origenY , this.wsize , this.origenY);
 
-    // Eje y
-    this.drawLine(this.origenX , this.origenY , this.origenX , this.hsize - this.origenY);
 
-    // labels
-    let label = 0;
-    let sumIteration = 0;
-    let veces = (this.wsize / this.iteracionX);
-    // this.text( label.toString() , this.origenX + label, this.origenY + this.margenY);
-    for (let i = 0; i <= veces ; i++) {
-      // para el eje X
-      this.text( ( Math.round( label / this.escalaX)).toString() , this.origenX + sumIteration, this.origenY + (this.margenY / 2) );
-      sumIteration = sumIteration + this.iteracionX;
-      label = label + this.iteracionX;
+    for (let i = 0; i <= this.theData.dataset.length - 2 ; i++) {
+     this.esolarChart.drawRect(
+       this.theData.dataset[i].x,
+       this.theData.dataset[i].y,
+       this.theData.dataset[i + 1].x,
+       this.theData.dataset[i + 1].y );
     }
-
-    label = 0;
-    sumIteration = 0;
-    veces = (this.hsize / this.iteracionY);
-    for (let i = 0; i <= veces; i++) {
-      // para el eje Y
-      this.text( ( Math.round( label / this.escalaY)).toString()  , this.origenX - (this.margenX / 2), this.origenY - sumIteration);
-      sumIteration = sumIteration + this.iteracionY;
-      label = label + this.iteracionY;
-    }
-
-    this.drawCoordinates(0, 5);
-    this.drawCoordinates(15 , 5);
-    this.drawCoordinates(30 , 5);
   }
+
+  getYMax(dataset: Point[]): number {
+    return dataset.sort( (a, b) => a.y - b.y )[0].y;
+  }
+
+  getXMax(dataset: Point[]): number {
+    return dataset.sort( (a, b) => a.x - b.x )[0].x;
+  }
+
+
 
   ngOnInit() { }
 
-  drawLine(startX, startY, endX, endY) {
-
-    this.ctx.beginPath();
-
-    this.ctx.moveTo(startX, startY);
-
-    this.ctx.lineTo(endX, endY);
-
-    this.ctx.stroke();
-  }
-
-  setLineWidth( width: number ) {
-    // Indicar el grosor de la línea
-    this.ctx.lineWidth = width;
-  }
-
-
-
-  text(labelsText: string, positionX: number, positionY: number) {
-    if (this.ctx) {
-      this.ctx.textAlign = 'center';
-      this.ctx.font = this.font;
-
-      this.ctx.lineWidth = this.textLineWidth;
-      this.ctx.fillText(labelsText, positionX, positionY);
-    }
-  }
-
-  drawCoordinates(unidadX: number, unidadY: number) {
-    this.ctx.beginPath();
-    this.ctx.arc(this.origenX + unidadX * this.escalaX, this.origenY - unidadY * this.escalaY, this.pointSize, 0, Math.PI * 2, true);
-    this.ctx.fill();
-  }
 
   setColorBackgroud ( color) {
     this.canvasRef.nativeElement.style.background = color;
   }
-
-
 
 }

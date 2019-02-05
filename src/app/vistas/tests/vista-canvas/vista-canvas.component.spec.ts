@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { VistaCanvasComponent } from './vista-canvas.component';
+import { MonoCanvasComponent } from 'src/app/components/mono-canvas/mono-canvas.component';
 
 describe('VistaCanvasComponent', () => {
   let component: VistaCanvasComponent;
@@ -8,7 +9,8 @@ describe('VistaCanvasComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ VistaCanvasComponent ]
+      imports: [],
+      declarations: [ VistaCanvasComponent, MonoCanvasComponent ]
     })
     .compileComponents();
   }));
