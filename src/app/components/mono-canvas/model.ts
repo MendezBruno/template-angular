@@ -172,6 +172,8 @@ export class ESolarChart {
       // TODO la cuenta tengo que pensar para setear el factor de la escala y poder usar el grafico en cualquier dimension
 
     }
+
+
   }
 
 
@@ -183,14 +185,11 @@ export class ESolarChart {
 
 
   export class OptionGraph {
-
       // Margenes de los ejes de coordenadas
       margenY = 20;
       margenX = 20;
       line: LineOptions = new LineOptions();
       labels: LabelOptions = new LabelOptions();
-
-
   }
 
 

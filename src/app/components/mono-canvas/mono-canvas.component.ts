@@ -62,12 +62,12 @@ export class MonoCanvasComponent implements OnInit, AfterViewInit, OnChanges {
     }
   }
 
-  getYMax(dataset: Point[]): number {
-    return dataset.sort( (a, b) => a.y - b.y )[0].y;
+  getYMaxEscale(dataset: Point[]): number {
+    return Math.round(dataset.sort( (a, b) => b.y - a.y )[0].y) + 1;
   }
 
-  getXMax(dataset: Point[]): number {
-    return dataset.sort( (a, b) => a.x - b.x )[0].x;
+  getXMaxEscale(dataset: Point[]): number {
+    return Math.round(dataset.sort( (a, b) => b.x - a.x )[0].x) + 1;
   }
 
 
