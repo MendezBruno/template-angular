@@ -1,4 +1,5 @@
 import { Utils } from "./utils";
+import { ArrayUtils } from "./arrayUtils";
 
 
 
@@ -212,5 +213,23 @@ export class Utilitarios {
     }
 
   
+    static creatorJson(cols: any, rowset: any ): any {
+     debugger;
+        let res: string =  '[';
+        
+       rowset.forEach(element => {
+           res = res +'{';
+           cols.forEach(col => {
+              res = res + '\"'+ col.header+ '\"'+':'+ '\"'+ element[col.field] +'\"'+ ','; 
+           });
+           res = res.slice(0 , res.length - 1);
+           res = res + '},'
+        });
+        res = res.slice(0 , res.length - 1);
+        res = res + ']'
+        
+    console.log(res);   
+    return  JSON.parse(res);
+    }
 
 }
