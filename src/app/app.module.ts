@@ -56,6 +56,7 @@ import { EstadosComponent } from './components/css/estados/estados.component';
 import { MonoCanvasComponent } from './components/mono-canvas/mono-canvas.component';
 import { VistaCanvasComponent } from './vistas/tests/vista-canvas/vista-canvas.component';
 import { TurnButtonComponent } from './components/buttons/turn-button/turn-button.component';
+import { EffectsButtonComponent } from './components/buttons/effects-button/effects-button.component';
 
 
 
@@ -102,6 +103,7 @@ import { TurnButtonComponent } from './components/buttons/turn-button/turn-butto
     MonoCanvasComponent,
     VistaCanvasComponent,
     TurnButtonComponent,
+    EffectsButtonComponent,
   ],
   imports: [
     BrowserModule,
