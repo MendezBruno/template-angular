@@ -57,6 +57,7 @@ import { MonoCanvasComponent } from './components/mono-canvas/mono-canvas.compon
 import { VistaCanvasComponent } from './vistas/tests/vista-canvas/vista-canvas.component';
 import { TurnButtonComponent } from './components/buttons/turn-button/turn-button.component';
 import { EffectsButtonComponent } from './components/buttons/effects-button/effects-button.component';
+import { MarketUnoComponent } from './vistas/cards/market-uno/market-uno.component';
 
 
 
@@ -104,6 +105,7 @@ import { EffectsButtonComponent } from './components/buttons/effects-button/effe
     VistaCanvasComponent,
     TurnButtonComponent,
     EffectsButtonComponent,
+    MarketUnoComponent,
   ],
   imports: [
     BrowserModule,

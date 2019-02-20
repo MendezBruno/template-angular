@@ -11,6 +11,7 @@ export const ArrayVistas = [
     'vistas/tests/spinnerTests',
     'vistas/tests/cssTest',
     'vistas/tests/vistaCanvas',
+    'vistas/cards/market-uno',
     'vistas/mercado-pago-test',
     'vistas/principales/monoOrg',
     'login/face-google',
