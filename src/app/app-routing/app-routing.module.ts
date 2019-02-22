@@ -20,11 +20,13 @@ import { CssTestComponent } from '../vistas/tests/css-test/css-test.component';
 import { FutbolHoyComponent } from '../vistas/principales/futbol-hoy/futbol-hoy.component';
 import { VistaCanvasComponent } from '../vistas/tests/vista-canvas/vista-canvas.component';
 import { MarketUnoComponent } from '../vistas/cards/market-uno/market-uno.component';
+import { VistaDinamicaComponent } from '../cdk-components/vista-dinamica/vista-dinamica.component';
 
 
 const appRoutes: Routes = [
   { path: '',   redirectTo: '/principal', pathMatch: 'full' },
   { path: 'principal', component: PrincipalComponent },
+  { path: 'cdk-components/vista-dinamica', component: VistaDinamicaComponent },
   { path: 'components/toolbars/simple-stick-toolbar', component: SimpleStickToolbarComponent },
   { path: 'components/toolbars/stick-toolbar', component: StickToolbarComponent },
   { path: 'vistas/cards/market-uno', component: MarketUnoComponent},

@@ -1,4 +1,5 @@
 export const ArrayVistas = [
+    'cdk-components/vista-dinamica',
     'components/toolbars/stick-toolbar',
     'components/toolbars/simple-stick-toolbar',
     'vistas/forms/product',

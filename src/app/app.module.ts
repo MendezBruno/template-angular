@@ -5,7 +5,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { ScrollDispatchModule } from '@angular/cdk/scrolling';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material';
 
@@ -58,10 +57,18 @@ import { VistaCanvasComponent } from './vistas/tests/vista-canvas/vista-canvas.c
 import { TurnButtonComponent } from './components/buttons/turn-button/turn-button.component';
 import { EffectsButtonComponent } from './components/buttons/effects-button/effects-button.component';
 import { MarketUnoComponent } from './vistas/cards/market-uno/market-uno.component';
+import { ScrollDispatchModule } from '@angular/cdk/scrolling';
+import { PortalModule } from '@angular/cdk/portal';
+import { VistaDinamicaComponent, ComponentPortalExample } from './cdk-components/vista-dinamica/vista-dinamica.component';
+import { ActionButtonComponent } from './cdk-components/vista-dinamica/action-button.component';
+import { NavbarWithPortalComponent } from './cdk-components/navbar-with-portal/navbar-with-portal.component';
+import { SupportComponent } from './cdk-components/vista-dinamica/support/support.component';
+
 
 
 
 @NgModule({
+  entryComponents:[ActionButtonComponent, FaceGoogleComponent, SupportComponent],
   declarations: [
     AppComponent,
     PrincipalComponent,
@@ -106,6 +113,11 @@ import { MarketUnoComponent } from './vistas/cards/market-uno/market-uno.compone
     TurnButtonComponent,
     EffectsButtonComponent,
     MarketUnoComponent,
+    VistaDinamicaComponent,
+    ActionButtonComponent,
+    NavbarWithPortalComponent,   
+    ComponentPortalExample,
+    SupportComponent
   ],
   imports: [
     BrowserModule,
@@ -118,6 +130,7 @@ import { MarketUnoComponent } from './vistas/cards/market-uno/market-uno.compone
     HttpModule,
     JsonpModule,
     ScrollDispatchModule,
+    PortalModule,
     MatDatepickerModule,
     MatNativeDateModule
   ],
