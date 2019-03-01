@@ -1,0 +1,36 @@
+.main-container{
+    margin: 0;
+    padding: 0;
+    background: coral;
+    font-family: sans-serif;
+} 
+
+.product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 240px;
+    height: 340px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.25);
+    border-radius:5px; 
+
+}
+
+.product .imgbox {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.product .imgbox img {
+    display: block;
+    width: 90;
+    margin:20px auto 0;
+}
+
+.details {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
