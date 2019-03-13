@@ -39,7 +39,6 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { ItemDosComponent } from './components/items/item-dos/item-dos.component';
 import { FooterUnoComponent } from './components/footers/footer-uno/footer-uno.component';
 import { VideoComponent } from './components/video/video.component';
-import { FunctionSatisfyDirective } from './directives/function-satisfy.directive';
 import { ReactiveFormOneComponent } from './vistas/forms/reactive-form-one/reactive-form-one.component';
 import { DropLoadFileComponent } from './commons-components/drop-load-file/drop-load-file.component';
 import { CommonsViewComponent } from './vistas/shared-components/commons-view/commons-view.component';
@@ -63,6 +62,10 @@ import { VistaDinamicaComponent, ComponentPortalExample } from './cdk-components
 import { ActionButtonComponent } from './cdk-components/vista-dinamica/action-button.component';
 import { NavbarWithPortalComponent } from './cdk-components/navbar-with-portal/navbar-with-portal.component';
 import { SupportComponent } from './cdk-components/vista-dinamica/support/support.component';
+// Directivas
+import { PriceFormaDirective } from './directives/price-forma.directive';
+import { FunctionSatisfyDirective } from './directives/function-satisfy.directive';
+import { ExpresionesRegularesComponent } from './vistas/tests/expresiones-regulares/expresiones-regulares.component';
 
 
 
@@ -95,8 +98,11 @@ import { SupportComponent } from './cdk-components/vista-dinamica/support/suppor
     FormularioComponent,
     ItemDosComponent,
     FooterUnoComponent,
-    VideoComponent,
+    VideoComponent, 
+    // Directivas
     FunctionSatisfyDirective,
+    PriceFormaDirective,
+    // fin de directivas
     ReactiveFormOneComponent,
     DropLoadFileComponent,
     CommonsViewComponent,
@@ -117,7 +123,8 @@ import { SupportComponent } from './cdk-components/vista-dinamica/support/suppor
     ActionButtonComponent,
     NavbarWithPortalComponent,   
     ComponentPortalExample,
-    SupportComponent
+    SupportComponent,
+    ExpresionesRegularesComponent
   ],
   imports: [
     BrowserModule,

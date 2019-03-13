@@ -1,0 +1,31 @@
+<p>Texto para evaluar: </p>
+<input [(ngModel)]="model.texto"><br>
+
+
+
+<p>Selecciones la expresion regular: </p>
+<select [(ngModel)]="model.myExpReg" >
+ <option *ngFor="let anExpReg of model.expresionesRegulares" 
+ [ngValue]="anExpReg">
+ {{ anExpReg.displayExp}}</option>
+</select>
+<button (click)="doItChange()" > Evaluar </button> 
+
+<p>Escriba una expresion regular:</p>
+<input [(ngModel)]="model.expRegInput">
+<button (click)="doItChangeByInput()">Evaluar</button>
+<br>
+
+<label>El match del string es: </label><br>
+    <div *ngIf="!!model.match; then list else nothingToList "></div> 
+    <ng-template #list>
+        <ul > 
+            <li *ngFor="let aMatch of model.match"> {{ aMatch }} </li>
+        </ul>
+    </ng-template>
+    <ng-template #nothingToList>
+        <p > No hay coincidencias </p>
+    </ng-template>
+<label>El método replace de string retorna: {{ model.replace }}</label> <br>
+<label>El test de la expresion regular da como resultado: {{ model.test }}</label><br>
+<label>El exec de la expresion regular da como resultado: {{ model.exec }} </label>

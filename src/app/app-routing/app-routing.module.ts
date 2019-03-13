@@ -21,6 +21,7 @@ import { FutbolHoyComponent } from '../vistas/principales/futbol-hoy/futbol-hoy.
 import { VistaCanvasComponent } from '../vistas/tests/vista-canvas/vista-canvas.component';
 import { MarketUnoComponent } from '../vistas/cards/market-uno/market-uno.component';
 import { VistaDinamicaComponent } from '../cdk-components/vista-dinamica/vista-dinamica.component';
+import { ExpresionesRegularesComponent } from '../vistas/tests/expresiones-regulares/expresiones-regulares.component';
 
 
 const appRoutes: Routes = [
@@ -39,6 +40,7 @@ const appRoutes: Routes = [
   { path: 'vistas/tests/spinnerTests', component: SpinnerTestComponent },
   { path: 'vistas/tests/cssTest', component: CssTestComponent },
   { path: 'vistas/tests/vistaCanvas', component: VistaCanvasComponent },
+  { path: 'vistas/tests/expresiones-regulares', component: ExpresionesRegularesComponent },
   { path: 'vistas/principales/monoOrg', component: MonoOrgComponent },
   { path: 'vistas/components/commons', component: CommonsViewComponent },
   { path: 'vistas/principales/futbol-hoy', component: FutbolHoyComponent },

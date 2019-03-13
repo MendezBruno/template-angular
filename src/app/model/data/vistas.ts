@@ -12,6 +12,7 @@ export const ArrayVistas = [
     'vistas/tests/spinnerTests',
     'vistas/tests/cssTest',
     'vistas/tests/vistaCanvas',
+    'vistas/tests/expresiones-regulares',
     'vistas/cards/market-uno',
     'vistas/mercado-pago-test',
     'vistas/principales/monoOrg',
