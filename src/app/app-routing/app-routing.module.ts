@@ -22,6 +22,8 @@ import { VistaCanvasComponent } from '../vistas/tests/vista-canvas/vista-canvas.
 import { MarketUnoComponent } from '../vistas/cards/market-uno/market-uno.component';
 import { VistaDinamicaComponent } from '../cdk-components/vista-dinamica/vista-dinamica.component';
 import { ExpresionesRegularesComponent } from '../vistas/tests/expresiones-regulares/expresiones-regulares.component';
+import { RegistrationFormOneComponent } from '../vistas/logins/registration-form-one/registration-form-one.component';
+import { SingUpComponent } from '../vistas/logins/sing-up/sing-up.component';
 
 
 const appRoutes: Routes = [
@@ -34,6 +36,8 @@ const appRoutes: Routes = [
   { path: 'vistas/forms/product', component: ProductComponent },
   { path: 'vistas/forms/user', component: UserComponent },
   { path: 'vistas/forms/turnos', component: TurnosComponent },
+  { path: 'vistas/forms/registrationOne', component: RegistrationFormOneComponent },
+  { path: 'vistas/forms/singUp', component: SingUpComponent },
   { path: 'vistas/forms/userGoogleMap', component: UserGoogleMapsComponent },
   { path: 'vistas/mercado-pago-test', component: MercadoPagoTestComponent },
   { path: 'vistas/forms/reactive-form-one', component: ReactiveFormOneComponent },

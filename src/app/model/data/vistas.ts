@@ -5,6 +5,8 @@ export const ArrayVistas = [
     'vistas/forms/product',
     'vistas/forms/user',
     'vistas/forms/turnos',
+    'vistas/forms/registrationOne',
+    'vistas/forms/singUp',
     'vistas/forms/userGoogleMap',
     'vistas/forms/reactive-form-one',
     'vistas/components/commons',
