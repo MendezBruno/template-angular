@@ -65,7 +65,7 @@ import { SupportComponent } from './cdk-components/vista-dinamica/support/suppor
 // Directivas
 import { PriceFormaDirective } from './directives/price-forma.directive';
 import { FunctionSatisfyDirective } from './directives/function-satisfy.directive';
-import { ExpresionesRegularesComponent } from './vistas/tests/expresiones-regulares/expresiones-regulares.component';
+import { ExpresionesRegularesComponent, Fcv } from './vistas/tests/expresiones-regulares/expresiones-regulares.component';
 import { RegistrationFormOneComponent } from './vistas/logins/registration-form-one/registration-form-one.component';
 import { SingUpComponent } from './vistas/logins/sing-up/sing-up.component';
 
@@ -128,7 +128,8 @@ import { SingUpComponent } from './vistas/logins/sing-up/sing-up.component';
     SupportComponent,
     ExpresionesRegularesComponent,
     RegistrationFormOneComponent,
-    SingUpComponent
+    SingUpComponent,
+    Fcv
   ],
   imports: [
     BrowserModule,

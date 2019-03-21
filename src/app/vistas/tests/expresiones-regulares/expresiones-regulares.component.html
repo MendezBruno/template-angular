@@ -29,3 +29,17 @@
 <label>El método replace de string retorna: {{ model.replace }}</label> <br>
 <label>El test de la expresion regular da como resultado: {{ model.test }}</label><br>
 <label>El exec de la expresion regular da como resultado: {{ model.exec }} </label>
+
+
+<h2> Form Control Value Ejemplo:  </h2>
+
+<form [formGroup]="myCustomForm" (ngSubmit)="onSubmit()"> 
+
+    <app-fcv id="fcv"  formControlName="fvc" ></app-fcv>     
+    <button type="submit" [disabled]="!myCustomForm.valid">prueba</button>
+</form>
+
+<p>
+    Form Pointer Status: {{ myCustomForm.status }}
+  </p>
+
