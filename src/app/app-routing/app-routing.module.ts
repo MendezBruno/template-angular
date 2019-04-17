@@ -24,12 +24,15 @@ import { VistaDinamicaComponent } from '../cdk-components/vista-dinamica/vista-d
 import { ExpresionesRegularesComponent } from '../vistas/tests/expresiones-regulares/expresiones-regulares.component';
 import { RegistrationFormOneComponent } from '../vistas/logins/registration-form-one/registration-form-one.component';
 import { SingUpComponent } from '../vistas/logins/sing-up/sing-up.component';
+import { CalendarioComponent } from '../commons-components/calendario/calendario.component';
+import { MenuHamburguesaAdaptativeComponent } from '../vistas/menus/menu-hamburguesa-adaptative/menu-hamburguesa-adaptative.component';
 
 
 const appRoutes: Routes = [
   { path: '',   redirectTo: '/principal', pathMatch: 'full' },
   { path: 'principal', component: PrincipalComponent },
   { path: 'cdk-components/vista-dinamica', component: VistaDinamicaComponent },
+  { path: 'commons-components/calendario', component: CalendarioComponent },
   { path: 'components/toolbars/simple-stick-toolbar', component: SimpleStickToolbarComponent },
   { path: 'components/toolbars/stick-toolbar', component: StickToolbarComponent },
   { path: 'vistas/cards/market-uno', component: MarketUnoComponent},
@@ -47,6 +50,7 @@ const appRoutes: Routes = [
   { path: 'vistas/tests/expresiones-regulares', component: ExpresionesRegularesComponent },
   { path: 'vistas/principales/monoOrg', component: MonoOrgComponent },
   { path: 'vistas/components/commons', component: CommonsViewComponent },
+  { path: 'vistas/menus/menu-hamburguesa-adaptative', component: MenuHamburguesaAdaptativeComponent },
   { path: 'vistas/principales/futbol-hoy', component: FutbolHoyComponent },
   { path: 'login/face-google', component: FaceGoogleComponent },
   { path: 'login/login-admin', component: LoginAdminComponent },

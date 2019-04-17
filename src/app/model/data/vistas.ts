@@ -1,5 +1,6 @@
 export const ArrayVistas = [
     'cdk-components/vista-dinamica',
+    'commons-components/calendario',
     'components/toolbars/stick-toolbar',
     'components/toolbars/simple-stick-toolbar',
     'vistas/forms/product',
@@ -21,4 +22,5 @@ export const ArrayVistas = [
     'login/face-google',
     'login/login-admin',
     'login/user-password',
+    'vistas/menus/menu-hamburguesa-adaptative',
 ];

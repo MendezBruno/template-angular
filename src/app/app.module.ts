@@ -68,6 +68,7 @@ import { FunctionSatisfyDirective } from './directives/function-satisfy.directiv
 import { ExpresionesRegularesComponent, Fcv } from './vistas/tests/expresiones-regulares/expresiones-regulares.component';
 import { RegistrationFormOneComponent } from './vistas/logins/registration-form-one/registration-form-one.component';
 import { SingUpComponent } from './vistas/logins/sing-up/sing-up.component';
+import { MenuHamburguesaAdaptativeComponent } from './vistas/menus/menu-hamburguesa-adaptative/menu-hamburguesa-adaptative.component';
 
 
 
@@ -129,7 +130,8 @@ import { SingUpComponent } from './vistas/logins/sing-up/sing-up.component';
     ExpresionesRegularesComponent,
     RegistrationFormOneComponent,
     SingUpComponent,
-    Fcv
+    Fcv,
+    MenuHamburguesaAdaptativeComponent
   ],
   imports: [
     BrowserModule,

@@ -35,9 +35,10 @@ export class ExpresionesRegularesComponent implements OnInit {
     console.log("get Submit now: ")
   }
 
+  deco: Decorateclass;
 
   ngOnInit() {
-    
+    this.deco = new Decorateclass();   
   }
 
   
@@ -71,6 +72,30 @@ class MyExpReg {
   }
 }
 
+function MyDecorator() {
+    console.log("class to decorate: " );
+    return function(target) {
+     console.log(Object.getOwnPropertyNames(target) );
+      console.log('Our decorated class', target);
+    };
+
+}
+
+@MyDecorator()
+class Decorateclass {
+
+    unaPalabra: string = "Hola";
+    otraPalabra: string = "Mondo";
+
+    constructor() {
+      debugger;
+      console.log('create decorateclass with a decorator')
+    }
+
+    miFuncionMiau() {
+      console.log('holaaaa')
+    }
+}
 
 /*
 
