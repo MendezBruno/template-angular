@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, Input } from '@angular/core';
 
 @Component({
   selector: 'app-menu-hamburguesa-adaptative',
@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuHamburguesaAdaptativeComponent implements OnInit {
 
-  constructor() { }
+  @Input() sections: string[];
+  
+  @ViewChild('menu') menu;
+  condicion:boolean = false;
 
-  ngOnInit() {
+
+
+  constructor() {
+    this.sections = ["Home", "Service", "Portfolio" ,"Contact" ,"About" ]
+  }
+
+  ngOnInit() { 
+    // this.menu.nativeElement.onclick( () => {
+
+    // })  
   }
 
 }

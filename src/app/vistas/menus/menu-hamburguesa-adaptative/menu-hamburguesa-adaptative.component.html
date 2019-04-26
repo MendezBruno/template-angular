@@ -1,3 +1,12 @@
-<p>
-  menu-hamburguesa-adaptative works!
-</p>
+<div class="mainContainer">
+  <div #menu (click)="condicion = !condicion" class="menu" [class]='condicion? "menu active": "menu" '>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="menu-bar" [class]='condicion? "menu-bar active": "menu-bar" '>
+    <ul>
+      <li *ngFor="let section of sections"> <a href=""> {{section}} </a> </li> 
+    </ul>
+  </div>
+</div>
