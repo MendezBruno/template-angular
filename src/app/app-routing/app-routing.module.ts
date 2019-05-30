@@ -26,6 +26,7 @@ import { RegistrationFormOneComponent } from '../vistas/logins/registration-form
 import { SingUpComponent } from '../vistas/logins/sing-up/sing-up.component';
 import { CalendarioComponent } from '../commons-components/calendario/calendario.component';
 import { MenuHamburguesaAdaptativeComponent } from '../vistas/menus/menu-hamburguesa-adaptative/menu-hamburguesa-adaptative.component';
+import { SideBarOneComponent } from '../vistas/menus/side-bar-one/side-bar-one.component';
 
 
 const appRoutes: Routes = [
@@ -51,6 +52,7 @@ const appRoutes: Routes = [
   { path: 'vistas/principales/monoOrg', component: MonoOrgComponent },
   { path: 'vistas/components/commons', component: CommonsViewComponent },
   { path: 'vistas/menus/menu-hamburguesa-adaptative', component: MenuHamburguesaAdaptativeComponent },
+  { path: 'vistas/menus/menu-side-bar', component: SideBarOneComponent },
   { path: 'vistas/principales/futbol-hoy', component: FutbolHoyComponent },
   { path: 'login/face-google', component: FaceGoogleComponent },
   { path: 'login/login-admin', component: LoginAdminComponent },
