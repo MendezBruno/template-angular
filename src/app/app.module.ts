@@ -70,6 +70,7 @@ import { RegistrationFormOneComponent } from './vistas/logins/registration-form-
 import { SingUpComponent } from './vistas/logins/sing-up/sing-up.component';
 import { MenuHamburguesaAdaptativeComponent } from './vistas/menus/menu-hamburguesa-adaptative/menu-hamburguesa-adaptative.component';
 import { SearchComponent } from './commons-components/search/search.component';
+import { SideBarOneComponent } from './vistas/menus/side-bar-one/side-bar-one.component';
 
 
 
@@ -133,7 +134,8 @@ import { SearchComponent } from './commons-components/search/search.component';
     SingUpComponent,
     Fcv,
     MenuHamburguesaAdaptativeComponent,
-    SearchComponent
+    SearchComponent,
+    SideBarOneComponent
   ],
   imports: [
     BrowserModule,
