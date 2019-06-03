@@ -26,6 +26,9 @@ import { RegistrationFormOneComponent } from '../vistas/logins/registration-form
 import { SingUpComponent } from '../vistas/logins/sing-up/sing-up.component';
 import { CalendarioComponent } from '../commons-components/calendario/calendario.component';
 import { MenuHamburguesaAdaptativeComponent } from '../vistas/menus/menu-hamburguesa-adaptative/menu-hamburguesa-adaptative.component';
+import { MarketDosComponent } from '../vistas/cards/market-dos/market-dos.component';
+import { UserCardDosComponent } from '../vistas/user-cards/user-card-dos/user-card-dos.component';
+import { UserCardUnoComponent } from '../vistas/user-cards/user-card-uno/user-card-uno.component';
 
 
 const appRoutes: Routes = [
@@ -36,6 +39,9 @@ const appRoutes: Routes = [
   { path: 'components/toolbars/simple-stick-toolbar', component: SimpleStickToolbarComponent },
   { path: 'components/toolbars/stick-toolbar', component: StickToolbarComponent },
   { path: 'vistas/cards/market-uno', component: MarketUnoComponent},
+  { path: 'vistas/cards/market-dos', component: MarketDosComponent}, 
+  { path: 'vistas/user-cards/user-card-uno', component: UserCardUnoComponent},
+  { path: 'vistas/user-cards/user-card-dos', component: UserCardDosComponent},
   { path: 'vistas/forms/product', component: ProductComponent },
   { path: 'vistas/forms/user', component: UserComponent },
   { path: 'vistas/forms/turnos', component: TurnosComponent },

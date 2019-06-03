@@ -69,6 +69,9 @@ import { ExpresionesRegularesComponent, Fcv } from './vistas/tests/expresiones-r
 import { RegistrationFormOneComponent } from './vistas/logins/registration-form-one/registration-form-one.component';
 import { SingUpComponent } from './vistas/logins/sing-up/sing-up.component';
 import { MenuHamburguesaAdaptativeComponent } from './vistas/menus/menu-hamburguesa-adaptative/menu-hamburguesa-adaptative.component';
+import { MarketDosComponent } from './vistas/cards/market-dos/market-dos.component';
+import { UserCardUnoComponent } from './vistas/user-cards/user-card-uno/user-card-uno.component';
+import { UserCardDosComponent } from './vistas/user-cards/user-card-dos/user-card-dos.component';
 
 
 
@@ -131,7 +134,10 @@ import { MenuHamburguesaAdaptativeComponent } from './vistas/menus/menu-hamburgu
     RegistrationFormOneComponent,
     SingUpComponent,
     Fcv,
-    MenuHamburguesaAdaptativeComponent
+    MenuHamburguesaAdaptativeComponent,
+    MarketDosComponent,
+    UserCardUnoComponent,
+    UserCardDosComponent
   ],
   imports: [
     BrowserModule,
