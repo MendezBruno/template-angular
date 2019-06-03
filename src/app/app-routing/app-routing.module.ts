@@ -29,6 +29,7 @@ import { MenuHamburguesaAdaptativeComponent } from '../vistas/menus/menu-hamburg
 import { MarketDosComponent } from '../vistas/cards/market-dos/market-dos.component';
 import { UserCardDosComponent } from '../vistas/user-cards/user-card-dos/user-card-dos.component';
 import { UserCardUnoComponent } from '../vistas/user-cards/user-card-uno/user-card-uno.component';
+import { SideBarOneComponent } from '../vistas/menus/side-bar-one/side-bar-one.component';
 
 
 const appRoutes: Routes = [
@@ -57,6 +58,7 @@ const appRoutes: Routes = [
   { path: 'vistas/principales/monoOrg', component: MonoOrgComponent },
   { path: 'vistas/components/commons', component: CommonsViewComponent },
   { path: 'vistas/menus/menu-hamburguesa-adaptative', component: MenuHamburguesaAdaptativeComponent },
+  { path: 'vistas/menus/menu-side-bar', component: SideBarOneComponent },
   { path: 'vistas/principales/futbol-hoy', component: FutbolHoyComponent },
   { path: 'login/face-google', component: FaceGoogleComponent },
   { path: 'login/login-admin', component: LoginAdminComponent },

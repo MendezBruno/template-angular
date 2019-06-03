@@ -72,6 +72,8 @@ import { MenuHamburguesaAdaptativeComponent } from './vistas/menus/menu-hamburgu
 import { MarketDosComponent } from './vistas/cards/market-dos/market-dos.component';
 import { UserCardUnoComponent } from './vistas/user-cards/user-card-uno/user-card-uno.component';
 import { UserCardDosComponent } from './vistas/user-cards/user-card-dos/user-card-dos.component';
+import { SearchComponent } from './commons-components/search/search.component';
+import { SideBarOneComponent } from './vistas/menus/side-bar-one/side-bar-one.component';
 
 
 
@@ -127,7 +129,7 @@ import { UserCardDosComponent } from './vistas/user-cards/user-card-dos/user-car
     MarketUnoComponent,
     VistaDinamicaComponent,
     ActionButtonComponent,
-    NavbarWithPortalComponent,   
+    NavbarWithPortalComponent,
     ComponentPortalExample,
     SupportComponent,
     ExpresionesRegularesComponent,
@@ -137,7 +139,9 @@ import { UserCardDosComponent } from './vistas/user-cards/user-card-dos/user-car
     MenuHamburguesaAdaptativeComponent,
     MarketDosComponent,
     UserCardUnoComponent,
-    UserCardDosComponent
+    UserCardDosComponent,
+    SearchComponent,
+    SideBarOneComponent
   ],
   imports: [
     BrowserModule,
