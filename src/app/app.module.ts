@@ -74,6 +74,7 @@ import { UserCardUnoComponent } from './vistas/user-cards/user-card-uno/user-car
 import { UserCardDosComponent } from './vistas/user-cards/user-card-dos/user-card-dos.component';
 import { SearchComponent } from './commons-components/search/search.component';
 import { SideBarOneComponent } from './vistas/menus/side-bar-one/side-bar-one.component';
+import { MarketTresComponent } from './vistas/cards/market-tres/market-tres.component';
 
 
 
@@ -141,7 +142,8 @@ import { SideBarOneComponent } from './vistas/menus/side-bar-one/side-bar-one.co
     UserCardUnoComponent,
     UserCardDosComponent,
     SearchComponent,
-    SideBarOneComponent
+    SideBarOneComponent,
+    MarketTresComponent
   ],
   imports: [
     BrowserModule,

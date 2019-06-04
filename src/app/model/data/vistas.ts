@@ -18,6 +18,7 @@ export const ArrayVistas = [
     'vistas/tests/expresiones-regulares',
     'vistas/cards/market-uno',
     'vistas/cards/market-dos',
+    'vistas/cards/market-tres',
     'vistas/mercado-pago-test',
     'vistas/principales/monoOrg',
     'vistas/user-cards/user-card-uno',

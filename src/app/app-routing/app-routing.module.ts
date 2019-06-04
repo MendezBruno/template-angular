@@ -30,6 +30,7 @@ import { MarketDosComponent } from '../vistas/cards/market-dos/market-dos.compon
 import { UserCardDosComponent } from '../vistas/user-cards/user-card-dos/user-card-dos.component';
 import { UserCardUnoComponent } from '../vistas/user-cards/user-card-uno/user-card-uno.component';
 import { SideBarOneComponent } from '../vistas/menus/side-bar-one/side-bar-one.component';
+import { MarketTresComponent } from '../vistas/cards/market-tres/market-tres.component';
 
 
 const appRoutes: Routes = [
@@ -40,7 +41,8 @@ const appRoutes: Routes = [
   { path: 'components/toolbars/simple-stick-toolbar', component: SimpleStickToolbarComponent },
   { path: 'components/toolbars/stick-toolbar', component: StickToolbarComponent },
   { path: 'vistas/cards/market-uno', component: MarketUnoComponent},
-  { path: 'vistas/cards/market-dos', component: MarketDosComponent}, 
+  { path: 'vistas/cards/market-dos', component: MarketDosComponent},
+  { path: 'vistas/cards/market-tres', component: MarketTresComponent},
   { path: 'vistas/user-cards/user-card-uno', component: UserCardUnoComponent},
   { path: 'vistas/user-cards/user-card-dos', component: UserCardDosComponent},
   { path: 'vistas/forms/product', component: ProductComponent },
