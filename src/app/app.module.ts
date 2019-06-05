@@ -79,6 +79,8 @@ import { ModalListComponent } from './commons-components/modal-list/modal-list.c
 import { CardsTestComponent } from './vistas/principales/cards-test/cards-test.component';
 import { FavoritoUnoComponent } from './components/buttons/favorito-uno/favorito-uno.component';
 import { HoverDosComponent } from './components/buttons/hover-dos/hover-dos.component';
+import { ListItemsComponent } from './commons-components/list-items/list-items.component';
+import { TrasButtonUnoComponent } from './components/buttons/tras-button-uno/tras-button-uno.component';
 
 
 
@@ -151,7 +153,9 @@ import { HoverDosComponent } from './components/buttons/hover-dos/hover-dos.comp
     ModalListComponent,
     CardsTestComponent,
     FavoritoUnoComponent,
-    HoverDosComponent
+    HoverDosComponent,
+    ListItemsComponent,
+    TrasButtonUnoComponent
   ],
   imports: [
     BrowserModule,

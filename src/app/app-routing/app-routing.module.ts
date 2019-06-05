@@ -32,6 +32,7 @@ import { UserCardUnoComponent } from '../vistas/user-cards/user-card-uno/user-ca
 import { SideBarOneComponent } from '../vistas/menus/side-bar-one/side-bar-one.component';
 import { MarketTresComponent } from '../vistas/cards/market-tres/market-tres.component';
 import { CardsTestComponent } from '../vistas/principales/cards-test/cards-test.component';
+import { ListItemsComponent } from '../commons-components/list-items/list-items.component';
 
 
 const appRoutes: Routes = [
@@ -39,6 +40,7 @@ const appRoutes: Routes = [
   { path: 'principal', component: PrincipalComponent },
   { path: 'cdk-components/vista-dinamica', component: VistaDinamicaComponent },
   { path: 'commons-components/calendario', component: CalendarioComponent },
+  { path: 'commons-components/list-items', component: ListItemsComponent },
   { path: 'components/toolbars/simple-stick-toolbar', component: SimpleStickToolbarComponent },
   { path: 'components/toolbars/stick-toolbar', component: StickToolbarComponent },
   { path: 'vistas/cards/market-uno', component: MarketUnoComponent},
