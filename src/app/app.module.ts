@@ -76,6 +76,9 @@ import { SearchComponent } from './commons-components/search/search.component';
 import { SideBarOneComponent } from './vistas/menus/side-bar-one/side-bar-one.component';
 import { MarketTresComponent } from './vistas/cards/market-tres/market-tres.component';
 import { ModalListComponent } from './commons-components/modal-list/modal-list.component';
+import { CardsTestComponent } from './vistas/principales/cards-test/cards-test.component';
+import { FavoritoUnoComponent } from './components/buttons/favorito-uno/favorito-uno.component';
+import { HoverDosComponent } from './components/buttons/hover-dos/hover-dos.component';
 
 
 
@@ -145,7 +148,10 @@ import { ModalListComponent } from './commons-components/modal-list/modal-list.c
     SearchComponent,
     SideBarOneComponent,
     MarketTresComponent,
-    ModalListComponent
+    ModalListComponent,
+    CardsTestComponent,
+    FavoritoUnoComponent,
+    HoverDosComponent
   ],
   imports: [
     BrowserModule,

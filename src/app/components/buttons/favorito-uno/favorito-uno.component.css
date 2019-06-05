@@ -1,0 +1,64 @@
+/* General */
+
+body {
+    background: #141E30;
+    }
+    
+    .container {
+      text-align: center;
+    }
+    .fa {
+      margin-right: 1em;
+    }
+    a {
+      margin-bottom: .2em;
+    }
+    /* Button styling */
+    .btn-shared, .btn-shared:focus {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      border-radius: 3px;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      transition: all 0.5s;
+      color: #1892BF;
+      border-color: #1892BF;
+      background: transparent;
+      margin: 0px 3px;
+      padding: 7px 14px;
+      outline: 0;
+      margin-left: 20px;
+    }
+    .btn-shared:hover {
+      background: #1892BF;
+      color: #FFF;
+    }
+    
+    .unfavorite-text {
+      display: none;
+    }
+    
+    /* after click */
+    .liked,
+    .liked:focus {
+      background: #1892BF;
+      color: #FFF;
+    }
+    
+    /* Animation */
+    
+    
+    /* 3. favorite button */
+    .liked .material-icons {
+       -webkit-animation:spin .5s linear;
+        -moz-animation:spin 0.5s linear;
+        animation:spin 0.5s linear;
+    }
+    
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+      
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+      
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

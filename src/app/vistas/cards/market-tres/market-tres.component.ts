@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { UserGitData } from './model';
 
 @Component({
   selector: 'app-market-tres',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MarketTresComponent implements OnInit {
 
+  @Input() userData: UserGitData;
   constructor() { }
 
   ngOnInit() {

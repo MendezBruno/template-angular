@@ -31,6 +31,7 @@ import { UserCardDosComponent } from '../vistas/user-cards/user-card-dos/user-ca
 import { UserCardUnoComponent } from '../vistas/user-cards/user-card-uno/user-card-uno.component';
 import { SideBarOneComponent } from '../vistas/menus/side-bar-one/side-bar-one.component';
 import { MarketTresComponent } from '../vistas/cards/market-tres/market-tres.component';
+import { CardsTestComponent } from '../vistas/principales/cards-test/cards-test.component';
 
 
 const appRoutes: Routes = [
@@ -62,6 +63,7 @@ const appRoutes: Routes = [
   { path: 'vistas/menus/menu-hamburguesa-adaptative', component: MenuHamburguesaAdaptativeComponent },
   { path: 'vistas/menus/menu-side-bar', component: SideBarOneComponent },
   { path: 'vistas/principales/futbol-hoy', component: FutbolHoyComponent },
+  { path: 'vistas/principales/cards-test', component: CardsTestComponent },
   { path: 'login/face-google', component: FaceGoogleComponent },
   { path: 'login/login-admin', component: LoginAdminComponent },
   { path: 'login/user-password', component: UserPasswordComponent },

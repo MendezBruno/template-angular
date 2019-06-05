@@ -1,4 +1,6 @@
-[               {
+export  class UserGitData {
+
+usergit = [ {
                    "login": "mojombo",
                    "id": 1,
                    "node_id": "MDQ6VXNlcjE=",
@@ -196,4 +198,5 @@
                    "created_at": "2015-10-27T17:00:09Z",
                    "updated_at": "2019-05-31T22:33:44Z"
                  }       
-       ]
+       ];
+}
