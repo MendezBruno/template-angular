@@ -81,6 +81,7 @@ import { FavoritoUnoComponent } from './components/buttons/favorito-uno/favorito
 import { HoverDosComponent } from './components/buttons/hover-dos/hover-dos.component';
 import { ListItemsComponent } from './commons-components/list-items/list-items.component';
 import { TrasButtonUnoComponent } from './components/buttons/tras-button-uno/tras-button-uno.component';
+import { PortfolioOneComponent } from './vistas/portfolios/portfolio-one/portfolio-one.component';
 
 
 
@@ -155,7 +156,8 @@ import { TrasButtonUnoComponent } from './components/buttons/tras-button-uno/tra
     FavoritoUnoComponent,
     HoverDosComponent,
     ListItemsComponent,
-    TrasButtonUnoComponent
+    TrasButtonUnoComponent,
+    PortfolioOneComponent
   ],
   imports: [
     BrowserModule,

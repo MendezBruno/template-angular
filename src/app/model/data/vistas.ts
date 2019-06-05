@@ -25,6 +25,7 @@ export const ArrayVistas = [
     'vistas/mercado-pago-test',
     'vistas/user-cards/user-card-uno',
     'vistas/user-cards/user-card-dos',
+    'vista/portfolios/portfolio-uno',
     'login/face-google',
     'login/login-admin',
     'login/user-password',

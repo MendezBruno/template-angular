@@ -33,6 +33,7 @@ import { SideBarOneComponent } from '../vistas/menus/side-bar-one/side-bar-one.c
 import { MarketTresComponent } from '../vistas/cards/market-tres/market-tres.component';
 import { CardsTestComponent } from '../vistas/principales/cards-test/cards-test.component';
 import { ListItemsComponent } from '../commons-components/list-items/list-items.component';
+import { PortfolioOneComponent } from '../vistas/portfolios/portfolio-one/portfolio-one.component';
 
 
 const appRoutes: Routes = [
@@ -55,6 +56,7 @@ const appRoutes: Routes = [
   { path: 'vistas/forms/singUp', component: SingUpComponent },
   { path: 'vistas/forms/userGoogleMap', component: UserGoogleMapsComponent },
   { path: 'vistas/mercado-pago-test', component: MercadoPagoTestComponent },
+  { path: 'vista/portfolios/portfolio-uno', component: PortfolioOneComponent },
   { path: 'vistas/forms/reactive-form-one', component: ReactiveFormOneComponent },
   { path: 'vistas/tests/spinnerTests', component: SpinnerTestComponent },
   { path: 'vistas/tests/cssTest', component: CssTestComponent },
