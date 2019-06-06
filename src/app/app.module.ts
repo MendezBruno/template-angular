@@ -82,6 +82,7 @@ import { HoverDosComponent } from './components/buttons/hover-dos/hover-dos.comp
 import { ListItemsComponent } from './commons-components/list-items/list-items.component';
 import { TrasButtonUnoComponent } from './components/buttons/tras-button-uno/tras-button-uno.component';
 import { PortfolioOneComponent } from './vistas/portfolios/portfolio-one/portfolio-one.component';
+import { FloatActionsButtonsComponent } from './components/buttons/float-actions-buttons/float-actions-buttons.component';
 
 
 
@@ -157,7 +158,8 @@ import { PortfolioOneComponent } from './vistas/portfolios/portfolio-one/portfol
     HoverDosComponent,
     ListItemsComponent,
     TrasButtonUnoComponent,
-    PortfolioOneComponent
+    PortfolioOneComponent,
+    FloatActionsButtonsComponent
   ],
   imports: [
     BrowserModule,
