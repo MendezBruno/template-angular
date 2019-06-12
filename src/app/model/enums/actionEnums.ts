@@ -1,0 +1,15 @@
+export enum Actions {
+    ALTA = 'ALTA',
+    BAJA = 'BAJA',
+    MODIFICACION = 'MODIFICACION',
+    CONSULTA = 'CONSULTA',
+    NUEVO = 'NUEVO',
+    CONFIRMAR_MODIFICACION = 'CONFIRMAR_MODIFICACION',
+    //Solo para autorizaciones
+    ACEPTAR_AUTORIZACION = 'ACEPTAR',
+    RECHAZAR_AUTORIZACION = 'RECHAZAR',
+    
+    //Filtro avanzado
+    APLICAR_FILTRO = 'APLICAR',
+    REMOVER_FILTRO = 'REMOVER'
+  }
