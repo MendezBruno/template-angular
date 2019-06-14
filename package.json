@@ -26,6 +26,7 @@
     "@angular/router": "^6.0.3",
     "animate.css": "^3.6.1",
     "core-js": "^2.5.4",
+    "file-saver": "^2.0.2",
     "hammerjs": "^2.0.8",
     "leaflet-geosearch": "^2.6.0",
     "rxjs": "^6.0.0",
