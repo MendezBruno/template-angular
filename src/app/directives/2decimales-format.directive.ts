@@ -3,6 +3,7 @@ import { Directive, OnInit, ElementRef, HostListener } from '@angular/core';
 @Directive({
   selector: '[dosDecimalesFormatter]'
 })
+// tslint:disable-next-line:class-name
 export class dosDecimalFormatDirective implements OnInit {
 
 

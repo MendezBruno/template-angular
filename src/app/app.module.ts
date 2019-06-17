@@ -83,6 +83,17 @@ import { ListItemsComponent } from './commons-components/list-items/list-items.c
 import { TrasButtonUnoComponent } from './components/buttons/tras-button-uno/tras-button-uno.component';
 import { PortfolioOneComponent } from './vistas/portfolios/portfolio-one/portfolio-one.component';
 import { FloatActionsButtonsComponent } from './components/buttons/float-actions-buttons/float-actions-buttons.component';
+import {CustomButtonComponent} from './components/buttons/custom-button/custom-button.component';
+import {BatterySizeComponent} from './components/css/battery-size/battery-size.component';
+import {FechaPipe} from './pipes/fecha.pipe';
+import {Decimal159ValidatorDirective} from './directives/decimal15-9-validator.directive';
+import {CuitFormatDirective} from './directives/cuit-format.directive';
+import {DecimalFormatDirective} from './directives/decimal-format.directive';
+import {FechaConsultaPipe} from './pipes/fecha.consulta.pipe';
+import {DecimalFormatPipe} from './pipes/decimal-format.pipe';
+import {MilesPipe} from './pipes/miles.pipe';
+import {dosDecimalFormatDirective} from './directives/2decimales-format.directive';
+import {OnlyNumbersDirective} from './directives/only-numbers.directive';
 
 
 
@@ -119,7 +130,19 @@ import { FloatActionsButtonsComponent } from './components/buttons/float-actions
     // Directivas
     FunctionSatisfyDirective,
     PriceFormaDirective,
+    dosDecimalFormatDirective,
+    CuitFormatDirective,
+    DecimalFormatDirective,
+    Decimal159ValidatorDirective,
+    OnlyNumbersDirective,
+
     // fin de directivas
+    // PIPES
+    DecimalFormatPipe,
+    FechaConsultaPipe,
+    FechaPipe,
+    MilesPipe,
+    // FIN de PIPES
     ReactiveFormOneComponent,
     DropLoadFileComponent,
     CommonsViewComponent,
@@ -159,7 +182,10 @@ import { FloatActionsButtonsComponent } from './components/buttons/float-actions
     ListItemsComponent,
     TrasButtonUnoComponent,
     PortfolioOneComponent,
-    FloatActionsButtonsComponent
+    FloatActionsButtonsComponent,
+    CustomButtonComponent,
+    BatterySizeComponent,
+
   ],
   imports: [
     BrowserModule,
