@@ -34,6 +34,7 @@ import { MarketTresComponent } from '../vistas/cards/market-tres/market-tres.com
 import { CardsTestComponent } from '../vistas/principales/cards-test/cards-test.component';
 import { ListItemsComponent } from '../commons-components/list-items/list-items.component';
 import { PortfolioOneComponent } from '../vistas/portfolios/portfolio-one/portfolio-one.component';
+import {CalendariodosComponent} from '../commons-components/calendariodos/calendariodos.component';
 
 
 const appRoutes: Routes = [
@@ -41,6 +42,7 @@ const appRoutes: Routes = [
   { path: 'principal', component: PrincipalComponent },
   { path: 'cdk-components/vista-dinamica', component: VistaDinamicaComponent },
   { path: 'commons-components/calendario', component: CalendarioComponent },
+  { path: 'commons-components/calendariodos', component: CalendariodosComponent },
   { path: 'commons-components/list-items', component: ListItemsComponent },
   { path: 'components/toolbars/simple-stick-toolbar', component: SimpleStickToolbarComponent },
   { path: 'components/toolbars/stick-toolbar', component: StickToolbarComponent },

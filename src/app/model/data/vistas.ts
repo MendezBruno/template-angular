@@ -1,6 +1,7 @@
 export const ArrayVistas = [
     'cdk-components/vista-dinamica',
     'commons-components/calendario',
+    'commons-components/calendariodos',
     'commons-components/list-items',
     'components/toolbars/stick-toolbar',
     'components/toolbars/simple-stick-toolbar',

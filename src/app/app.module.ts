@@ -94,6 +94,7 @@ import {DecimalFormatPipe} from './pipes/decimal-format.pipe';
 import {MilesPipe} from './pipes/miles.pipe';
 import {dosDecimalFormatDirective} from './directives/2decimales-format.directive';
 import {OnlyNumbersDirective} from './directives/only-numbers.directive';
+import { CalendariodosComponent } from './commons-components/calendariodos/calendariodos.component';
 
 
 
@@ -185,6 +186,7 @@ import {OnlyNumbersDirective} from './directives/only-numbers.directive';
     FloatActionsButtonsComponent,
     CustomButtonComponent,
     BatterySizeComponent,
+    CalendariodosComponent,
 
   ],
   imports: [

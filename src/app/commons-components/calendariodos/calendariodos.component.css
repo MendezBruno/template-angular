@@ -1,0 +1,36 @@
+. {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #4bc970;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.month .prev {
+  float: left;
+  padding: 10px;
+
+}
+
+.month .next {
+  float: right;
+  padding: 10px;
+
+}
