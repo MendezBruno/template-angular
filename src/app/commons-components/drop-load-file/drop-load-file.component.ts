@@ -15,7 +15,7 @@ export class DropLoadFileComponent implements OnInit {
   @Output() files: EventEmitter<FileList> = new EventEmitter<FileList>() ;
   @Output() file: EventEmitter<File> = new EventEmitter<File>() ;
   @Output() error: EventEmitter<Error> = new EventEmitter<Error>();
-  @ViewChild('panelDrop') panelDrop: ElementRef;
+  @ViewChild('panelDrop', {static: true}) panelDrop: ElementRef;
   dropZone;
   allowedExtensions: RegExp;  
 

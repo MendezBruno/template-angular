@@ -7,7 +7,7 @@ import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 })
 export class FavoritoUnoComponent implements OnInit {
 
-  @ViewChild('like') like: ElementRef;
+  @ViewChild('like', {static: true}) like: ElementRef;
   este = true;
 
   constructor() { }

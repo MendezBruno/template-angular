@@ -17,7 +17,7 @@ export class VistaDinamicaComponent {
     console.log('Principal click');
   }
   
-  @ViewChild('templatePortalContent') templatePortalContent: TemplateRef<any>;
+  @ViewChild('templatePortalContent', {static: true}) templatePortalContent: TemplateRef<any>;
   selectedPortal: Portal<any>;
   componentPortal: ComponentPortal<SupportComponent>;
   templatePortal: TemplatePortal<any>;

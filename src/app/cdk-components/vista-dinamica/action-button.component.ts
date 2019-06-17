@@ -12,7 +12,7 @@ import { CdkPortal, DomPortalHost } from '@angular/cdk/portal';
 })
 export class ActionButtonComponent implements AfterViewInit, OnDestroy {
   
-  @ViewChild(CdkPortal)
+  @ViewChild(CdkPortal, {static: true})
   private portal: CdkPortal;
   
   private host: DomPortalHost;
@@ -43,4 +43,3 @@ export class ActionButtonComponent implements AfterViewInit, OnDestroy {
 
 
   }
-  

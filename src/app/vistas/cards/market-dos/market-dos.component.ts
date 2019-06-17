@@ -7,7 +7,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class MarketDosComponent implements OnInit {
 
- @ViewChild('bottom') elementBotton: ElementRef;
+ @ViewChild('bottom', {static: true}) elementBotton: ElementRef;
 
   constructor() { }
 

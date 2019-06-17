@@ -8,7 +8,7 @@ import { ESolarChart, ESOLARCOLOR, Point, GenericDatasetPoints } from './model';
 })
 export class MonoCanvasComponent implements OnInit, AfterViewInit, OnChanges {
 
-  @ViewChild('grafico')
+  @ViewChild('grafico', {static: true})
   canvasRef: ElementRef;
 
   theData: GenericDatasetPoints = new GenericDatasetPoints();

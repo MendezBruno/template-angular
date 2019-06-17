@@ -12,7 +12,7 @@ export class ItemUnoComponent implements OnInit {
 
   state = 'hide';
   @Input() item: Item;
-  @ViewChild ('angularContainer') angularContainer: ElementRef;
+  @ViewChild ('angularContainer', {static: true}) angularContainer: ElementRef;
 
   constructor(public el: ElementRef) { }
 
