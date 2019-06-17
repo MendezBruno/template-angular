@@ -1,0 +1,7 @@
+<div class="container col-md-2 clearfix">
+  <a (click)="toggleClass()" id="like" #like class="btn btn-lg btn-block btn-shared btn-favorite">
+    <i class="material-icons fa fa-star pull-left">star</i>
+    <span *ngIf="este" class="favorite-text">Favorite</span>
+    <span *ngIf="este" class="unfavorite-text">Favorite</span>
+  </a>
+</div>

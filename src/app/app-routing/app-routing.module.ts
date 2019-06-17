@@ -26,7 +26,14 @@ import { RegistrationFormOneComponent } from '../vistas/logins/registration-form
 import { SingUpComponent } from '../vistas/logins/sing-up/sing-up.component';
 import { CalendarioComponent } from '../commons-components/calendario/calendario.component';
 import { MenuHamburguesaAdaptativeComponent } from '../vistas/menus/menu-hamburguesa-adaptative/menu-hamburguesa-adaptative.component';
+import { MarketDosComponent } from '../vistas/cards/market-dos/market-dos.component';
+import { UserCardDosComponent } from '../vistas/user-cards/user-card-dos/user-card-dos.component';
+import { UserCardUnoComponent } from '../vistas/user-cards/user-card-uno/user-card-uno.component';
 import { SideBarOneComponent } from '../vistas/menus/side-bar-one/side-bar-one.component';
+import { MarketTresComponent } from '../vistas/cards/market-tres/market-tres.component';
+import { CardsTestComponent } from '../vistas/principales/cards-test/cards-test.component';
+import { ListItemsComponent } from '../commons-components/list-items/list-items.component';
+import { PortfolioOneComponent } from '../vistas/portfolios/portfolio-one/portfolio-one.component';
 
 
 const appRoutes: Routes = [
@@ -34,9 +41,14 @@ const appRoutes: Routes = [
   { path: 'principal', component: PrincipalComponent },
   { path: 'cdk-components/vista-dinamica', component: VistaDinamicaComponent },
   { path: 'commons-components/calendario', component: CalendarioComponent },
+  { path: 'commons-components/list-items', component: ListItemsComponent },
   { path: 'components/toolbars/simple-stick-toolbar', component: SimpleStickToolbarComponent },
   { path: 'components/toolbars/stick-toolbar', component: StickToolbarComponent },
   { path: 'vistas/cards/market-uno', component: MarketUnoComponent},
+  { path: 'vistas/cards/market-dos', component: MarketDosComponent},
+  { path: 'vistas/cards/market-tres', component: MarketTresComponent},
+  { path: 'vistas/user-cards/user-card-uno', component: UserCardUnoComponent},
+  { path: 'vistas/user-cards/user-card-dos', component: UserCardDosComponent},
   { path: 'vistas/forms/product', component: ProductComponent },
   { path: 'vistas/forms/user', component: UserComponent },
   { path: 'vistas/forms/turnos', component: TurnosComponent },
@@ -44,6 +56,7 @@ const appRoutes: Routes = [
   { path: 'vistas/forms/singUp', component: SingUpComponent },
   { path: 'vistas/forms/userGoogleMap', component: UserGoogleMapsComponent },
   { path: 'vistas/mercado-pago-test', component: MercadoPagoTestComponent },
+  { path: 'vista/portfolios/portfolio-uno', component: PortfolioOneComponent },
   { path: 'vistas/forms/reactive-form-one', component: ReactiveFormOneComponent },
   { path: 'vistas/tests/spinnerTests', component: SpinnerTestComponent },
   { path: 'vistas/tests/cssTest', component: CssTestComponent },
@@ -54,6 +67,7 @@ const appRoutes: Routes = [
   { path: 'vistas/menus/menu-hamburguesa-adaptative', component: MenuHamburguesaAdaptativeComponent },
   { path: 'vistas/menus/menu-side-bar', component: SideBarOneComponent },
   { path: 'vistas/principales/futbol-hoy', component: FutbolHoyComponent },
+  { path: 'vistas/principales/cards-test', component: CardsTestComponent },
   { path: 'login/face-google', component: FaceGoogleComponent },
   { path: 'login/login-admin', component: LoginAdminComponent },
   { path: 'login/user-password', component: UserPasswordComponent },

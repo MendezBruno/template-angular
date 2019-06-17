@@ -69,7 +69,20 @@ import { ExpresionesRegularesComponent, Fcv } from './vistas/tests/expresiones-r
 import { RegistrationFormOneComponent } from './vistas/logins/registration-form-one/registration-form-one.component';
 import { SingUpComponent } from './vistas/logins/sing-up/sing-up.component';
 import { MenuHamburguesaAdaptativeComponent } from './vistas/menus/menu-hamburguesa-adaptative/menu-hamburguesa-adaptative.component';
+import { MarketDosComponent } from './vistas/cards/market-dos/market-dos.component';
+import { UserCardUnoComponent } from './vistas/user-cards/user-card-uno/user-card-uno.component';
+import { UserCardDosComponent } from './vistas/user-cards/user-card-dos/user-card-dos.component';
+import { SearchComponent } from './commons-components/search/search.component';
 import { SideBarOneComponent } from './vistas/menus/side-bar-one/side-bar-one.component';
+import { MarketTresComponent } from './vistas/cards/market-tres/market-tres.component';
+import { ModalListComponent } from './commons-components/modal-list/modal-list.component';
+import { CardsTestComponent } from './vistas/principales/cards-test/cards-test.component';
+import { FavoritoUnoComponent } from './components/buttons/favorito-uno/favorito-uno.component';
+import { HoverDosComponent } from './components/buttons/hover-dos/hover-dos.component';
+import { ListItemsComponent } from './commons-components/list-items/list-items.component';
+import { TrasButtonUnoComponent } from './components/buttons/tras-button-uno/tras-button-uno.component';
+import { PortfolioOneComponent } from './vistas/portfolios/portfolio-one/portfolio-one.component';
+import { FloatActionsButtonsComponent } from './components/buttons/float-actions-buttons/float-actions-buttons.component';
 
 
 
@@ -125,7 +138,7 @@ import { SideBarOneComponent } from './vistas/menus/side-bar-one/side-bar-one.co
     MarketUnoComponent,
     VistaDinamicaComponent,
     ActionButtonComponent,
-    NavbarWithPortalComponent,   
+    NavbarWithPortalComponent,
     ComponentPortalExample,
     SupportComponent,
     ExpresionesRegularesComponent,
@@ -133,7 +146,20 @@ import { SideBarOneComponent } from './vistas/menus/side-bar-one/side-bar-one.co
     SingUpComponent,
     Fcv,
     MenuHamburguesaAdaptativeComponent,
-    SideBarOneComponent
+    MarketDosComponent,
+    UserCardUnoComponent,
+    UserCardDosComponent,
+    SearchComponent,
+    SideBarOneComponent,
+    MarketTresComponent,
+    ModalListComponent,
+    CardsTestComponent,
+    FavoritoUnoComponent,
+    HoverDosComponent,
+    ListItemsComponent,
+    TrasButtonUnoComponent,
+    PortfolioOneComponent,
+    FloatActionsButtonsComponent
   ],
   imports: [
     BrowserModule,

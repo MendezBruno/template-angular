@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommonsViewComponent implements OnInit {
 
-  extensiones = ['.xlsx','.xls','.ods'];
+  extensiones = ['.xlsx','.xls','.ods','.csv'];
   multifile = false;
   constructor() { }
 
@@ -24,6 +24,10 @@ export class CommonsViewComponent implements OnInit {
 
   errorHandle(error: Error) {
     console.log( error );
+  }
+
+  parseCsvData(event) {
+    console.log(event);
   }
 
 }
