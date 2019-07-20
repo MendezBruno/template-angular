@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef, Input, Output, EventEmitter } from '@angular/core';
 import { LogsCustom } from '../../utils/logs';
+import { EmitData } from '../../model/data/simpleData';
+import { Actions } from '../../model/enums/actionEnums';
 
 @Component({
   selector: 'app-drop-load-file',
@@ -13,9 +15,13 @@ export class DropLoadFileComponent implements OnInit {
   @Output() files: EventEmitter<FileList> = new EventEmitter<FileList>() ;
   @Output() file: EventEmitter<File> = new EventEmitter<File>() ;
   @Output() error: EventEmitter<Error> = new EventEmitter<Error>();
-  @ViewChild('panelDrop') panelDrop: ElementRef;
+  @ViewChild('panelDrop', {static: true}) panelDrop: ElementRef;
   dropZone;
   allowedExtensions: RegExp;  
+
+  // Salidas
+  @Output() csvData: EventEmitter<EmitData> = new EventEmitter<EmitData>()
+  //@Output() error: EventEmitter<any> = new EventEmitter<any>();
   
   constructor() { 
     // Setup the dnd listeners.
@@ -68,10 +74,18 @@ export class DropLoadFileComponent implements OnInit {
     }           
 
 
+    // Esto emite el file que capturo
+    // if (this.multiFile) {
+    //   this.files.emit(files); 
+    // } else {
+    //   this.file.emit(files[0]);
+    // }
+
+    // aca en ves de esto iria el procces file y emitimos la data
     if (this.multiFile) {
-      this.files.emit(files);
+      // emitir multiples files
     } else {
-      this.file.emit(files[0]);
+      this.processFile(files[0]);
     }
   }
 
@@ -79,6 +93,52 @@ export class DropLoadFileComponent implements OnInit {
     evt.stopPropagation();
     evt.preventDefault();
     evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+  }
+
+
+  processFile(file: any): any {
+    let reader = new FileReader();
+    if (!this.allowedExtensions.test(file.name)) {
+      LogsCustom.error('Error: Las extenciones del archivo esperadas eran: ' + this.extensions + ' y Se obtuvo: ' + '.' + file.name.split('.').pop());
+     // this.error.emit('Error: Las extenciones del archivo esperadas eran: ' + this.extensions + ' y Se obtuvo: ' + '.' + file.name.split('.').pop());
+      return;
+    }
+
+    reader.readAsText(file);
+    reader.onload = (event) => {
+      let target: any = event.target; //<-- El (any) hace que el compilador no joda
+      let csv: string = target.result; // contenido del CSV
+      this.extractData(csv); //Funcion para trabajar los datos del archivo
+    }
+  }
+
+  extractData(data) {
+
+    let csvData = data;
+    let allTextLines: string[] = []
+    allTextLines = csvData.split(/\n/)
+    // let colums: string = allTextLines[0]
+    // let headers = allTextLines[0].split(';')
+
+    let allDataLines = allTextLines//.filter(e => !e.includes(colums))
+
+    // let lines = [];
+
+    // for ( let i = 0; i < allDataLines.length; i++) {
+    //     // split content based on comma
+    //     let data = allDataLines[i].split(';');
+    //     if (data.length == headers.length) {
+    //         let tarr = [];
+    //         for ( let j = 0; j < headers.length; j++) {
+    //             tarr.push(data[j]);
+    //         }
+    //         lines.push(tarr);
+    //     }
+    // }
+    if (allDataLines[allDataLines.length - 1] == '') allDataLines.pop()
+
+    this.csvData.emit(new EmitData(Actions.ALTA, allDataLines))
+    // console.log(lines); //The data in the form of 2 dimensional array.
   }
 
 }

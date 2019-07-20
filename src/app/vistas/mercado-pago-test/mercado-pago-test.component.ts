@@ -11,8 +11,8 @@ export class MercadoPagoTestComponent implements OnInit {
 
   constructor(private mp: MercadopagoService) { }
 
-  @ViewChild('paymentMethodId') paymentMethod: ElementRef;
-  @ViewChild('pay') form;
+  @ViewChild('paymentMethodId', {static: true}) paymentMethod: ElementRef;
+  @ViewChild('pay', {static: true}) form;
   bin = '';
   doSubmit = false;
 

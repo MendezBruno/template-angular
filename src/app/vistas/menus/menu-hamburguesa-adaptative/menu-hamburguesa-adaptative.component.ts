@@ -9,7 +9,7 @@ export class MenuHamburguesaAdaptativeComponent implements OnInit {
 
   @Input() sections: string[];
   
-  @ViewChild('menu') menu;
+  @ViewChild('menu', {static: true}) menu;
   condicion:boolean = false;
 
 

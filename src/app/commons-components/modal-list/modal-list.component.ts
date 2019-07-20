@@ -7,7 +7,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class ModalListComponent implements OnInit {
 
-  @ViewChild('modal') theModal: ElementRef;
+  @ViewChild('modal', {static: true}) theModal: ElementRef;
   constructor() { }
 
   ngOnInit() {
