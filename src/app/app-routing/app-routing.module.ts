@@ -8,8 +8,8 @@ import { FaceGoogleComponent } from '../vistas/logins/face-google/face-google.co
 import { LoginAdminComponent } from '../vistas/logins/login-admin/login-admin.component';
 import { UserPasswordComponent } from '../vistas/logins/user-password/user-password.component';
 import { TurnosComponent } from '../vistas/forms/turnos/turnos.component';
-import { StickToolbarComponent } from '../components/toolbars/stick-toolbar/stick-toolbar.component';
-import { SimpleStickToolbarComponent } from '../components/toolbars/simple-stick-toolbar/simple-stick-toolbar.component';
+import { StickToolbarComponent } from '../components/toolbars-materials/stick-toolbar/stick-toolbar.component';
+import { SimpleStickToolbarComponent } from '../components/toolbars-materials/simple-stick-toolbar/simple-stick-toolbar.component';
 import { UserGoogleMapsComponent } from '../vistas/forms/user-google-maps/user-google-maps.component';
 import { MercadoPagoTestComponent } from '../vistas/mercado-pago-test/mercado-pago-test.component';
 import { MonoOrgComponent } from '../vistas/principales/mono-org/mono-org.component';

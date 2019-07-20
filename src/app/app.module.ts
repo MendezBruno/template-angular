@@ -12,8 +12,8 @@ import { MatNativeDateModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { PrincipalComponent } from './vistas/principal/principal.component';
-import { SubHeaderComponent } from './components/toolbars/sub-header/sub-header.component';
-import { MainHeaderComponent } from './components/toolbars/main-header/main-header.component';
+import { SubHeaderComponent } from './components/toolbars-materials/sub-header/sub-header.component';
+import { MainHeaderComponent } from './components/toolbars-materials/main-header/main-header.component';
 import { MenuComponent } from './components/menu/menu.component';
 
 
@@ -27,12 +27,12 @@ import { CarnesLaColoradaComponent } from './vistas/principales/carnes-la-colora
 import { FutbolHoyComponent } from './vistas/principales/futbol-hoy/futbol-hoy.component';
 import { TurnosComponent } from './vistas/forms/turnos/turnos.component';
 import { CarruselComponent } from './components/carrusel/carrusel.component';
-import { StickToolbarComponent } from './components/toolbars/stick-toolbar/stick-toolbar.component';
-import { SimpleStickToolbarComponent } from './components/toolbars/simple-stick-toolbar/simple-stick-toolbar.component';
+import { StickToolbarComponent } from './components/toolbars-materials/stick-toolbar/stick-toolbar.component';
+import { SimpleStickToolbarComponent } from './components/toolbars-materials/simple-stick-toolbar/simple-stick-toolbar.component';
 import { UserGoogleMapsComponent } from './vistas/forms/user-google-maps/user-google-maps.component';
 import { MercadoPagoTestComponent } from './vistas/mercado-pago-test/mercado-pago-test.component';
 import { MonoOrgComponent } from './vistas/principales/mono-org/mono-org.component';
-import { MainTransparentHeadersComponent } from './components/toolbars/main-transparent-headers/main-transparent-headers.component';
+import { MainTransparentHeadersComponent } from './components/toolbars-materials/main-transparent-headers/main-transparent-headers.component';
 import { Carruselv2Component } from './components/carruselv2/carruselv2.component';
 import { ItemUnoComponent } from './components/items/item-uno/item-uno.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
@@ -56,7 +56,7 @@ import { VistaCanvasComponent } from './vistas/tests/vista-canvas/vista-canvas.c
 import { TurnButtonComponent } from './components/buttons/turn-button/turn-button.component';
 import { EffectsButtonComponent } from './components/buttons/effects-button/effects-button.component';
 import { MarketUnoComponent } from './vistas/cards/market-uno/market-uno.component';
-import { ScrollDispatchModule } from '@angular/cdk/scrolling';
+import { ScrollDispatchModule } from '@angular/cdk/scrolling'; 
 import { PortalModule } from '@angular/cdk/portal';
 import { VistaDinamicaComponent, ComponentPortalExample } from './cdk-components/vista-dinamica/vista-dinamica.component';
 import { ActionButtonComponent } from './cdk-components/vista-dinamica/action-button.component';
@@ -82,6 +82,7 @@ import { HoverDosComponent } from './components/buttons/hover-dos/hover-dos.comp
 import { ListItemsComponent } from './commons-components/list-items/list-items.component';
 import { TrasButtonUnoComponent } from './components/buttons/tras-button-uno/tras-button-uno.component';
 import { PortfolioOneComponent } from './vistas/portfolios/portfolio-one/portfolio-one.component';
+import { BadgeIconComponent } from './components/badge-icon/badge-icon.component';
 
 
 
@@ -157,7 +158,8 @@ import { PortfolioOneComponent } from './vistas/portfolios/portfolio-one/portfol
     HoverDosComponent,
     ListItemsComponent,
     TrasButtonUnoComponent,
-    PortfolioOneComponent
+    PortfolioOneComponent,
+    BadgeIconComponent
   ],
   imports: [
     BrowserModule,
@@ -172,7 +174,8 @@ import { PortfolioOneComponent } from './vistas/portfolios/portfolio-one/portfol
     ScrollDispatchModule,
     PortalModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+
   ],
   providers: [CommunicationService],
   bootstrap: [AppComponent]
