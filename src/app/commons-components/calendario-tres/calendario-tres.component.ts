@@ -70,7 +70,7 @@ numerar() {
     let dia = fecha.getDate()
     let dia_semana = fecha.getDay();
     if (dia == 1) {var sem = 0;}
-    select_tabla.children[2].children[sem].children[dia_semana].innerText = dia;
+    // select_tabla.children[2].children[sem].children[dia_semana].innerText = dia;
     if (dia_semana == 6) { sem = sem + 1; }
   }
 }

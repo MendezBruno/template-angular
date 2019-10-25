@@ -35,6 +35,8 @@ import { CardsTestComponent } from '../vistas/principales/cards-test/cards-test.
 import { ListItemsComponent } from '../commons-components/list-items/list-items.component';
 import { PortfolioOneComponent } from '../vistas/portfolios/portfolio-one/portfolio-one.component';
 import {CalendariodosComponent} from '../commons-components/calendariodos/calendariodos.component';
+import { from } from 'rxjs';
+import { ViewPanelOneComponent } from '../vistas/principales/view-panel-one/view-panel-one.component';
 
 
 const appRoutes: Routes = [
@@ -65,6 +67,7 @@ const appRoutes: Routes = [
   { path: 'vistas/tests/vistaCanvas', component: VistaCanvasComponent },
   { path: 'vistas/tests/expresiones-regulares', component: ExpresionesRegularesComponent },
   { path: 'vistas/principales/monoOrg', component: MonoOrgComponent },
+  { path: 'vistas/principales/dasboardPrimero', component: ViewPanelOneComponent },
   { path: 'vistas/components/commons', component: CommonsViewComponent },
   { path: 'vistas/menus/menu-hamburguesa-adaptative', component: MenuHamburguesaAdaptativeComponent },
   { path: 'vistas/menus/menu-side-bar', component: SideBarOneComponent },

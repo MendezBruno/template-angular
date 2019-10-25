@@ -16,6 +16,7 @@ export const ArrayVistas = [
     'vistas/principales/futbol-hoy',
     'vistas/principales/monoOrg',
     'vistas/principales/cards-test',
+    'vistas/principales/dasboardPrimero',
     'vistas/tests/spinnerTests',
     'vistas/tests/cssTest',
     'vistas/tests/vistaCanvas',

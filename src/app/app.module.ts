@@ -96,6 +96,7 @@ import {MilesPipe} from './pipes/miles.pipe';
 import {dosDecimalFormatDirective} from './directives/2decimales-format.directive';
 import {OnlyNumbersDirective} from './directives/only-numbers.directive';
 import { CalendariodosComponent } from './commons-components/calendariodos/calendariodos.component';
+import { ViewPanelOneComponent } from './vistas/principales/view-panel-one/view-panel-one.component';
 
 
 
@@ -189,6 +190,7 @@ import { CalendariodosComponent } from './commons-components/calendariodos/calen
     CustomButtonComponent,
     BatterySizeComponent,
     CalendariodosComponent,
+    ViewPanelOneComponent,
 
   ],
   imports: [
