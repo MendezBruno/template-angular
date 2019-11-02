@@ -34,9 +34,9 @@ import { MarketTresComponent } from '../vistas/cards/market-tres/market-tres.com
 import { CardsTestComponent } from '../vistas/principales/cards-test/cards-test.component';
 import { ListItemsComponent } from '../commons-components/list-items/list-items.component';
 import { PortfolioOneComponent } from '../vistas/portfolios/portfolio-one/portfolio-one.component';
-import {CalendariodosComponent} from '../commons-components/calendariodos/calendariodos.component';
-import { from } from 'rxjs';
+import { CalendariodosComponent } from '../commons-components/calendariodos/calendariodos.component';
 import { ViewPanelOneComponent } from '../vistas/principales/view-panel-one/view-panel-one.component';
+import { DynamicDialogComponent } from '../dynamic-dialog-demo-module/dynamic-dialog/dynamic-dialog.component';
 
 
 const appRoutes: Routes = [
@@ -73,6 +73,7 @@ const appRoutes: Routes = [
   { path: 'vistas/menus/menu-side-bar', component: SideBarOneComponent },
   { path: 'vistas/principales/futbol-hoy', component: FutbolHoyComponent },
   { path: 'vistas/principales/cards-test', component: CardsTestComponent },
+  { path: 'vistas/common-dialog-edit', component: DynamicDialogComponent },
   { path: 'login/face-google', component: FaceGoogleComponent },
   { path: 'login/login-admin', component: LoginAdminComponent },
   { path: 'login/user-password', component: UserPasswordComponent },

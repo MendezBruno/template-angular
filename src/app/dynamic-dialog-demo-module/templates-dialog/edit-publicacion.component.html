@@ -1,0 +1,12 @@
+<p-card>
+  <p-header>
+    <h2>Cambiar</h2>
+    <h3>Escriba o elija el nuevo elemento para mostrar en la publicacion</h3>
+  </p-header>
+  <input type="text" pInputText [(ngModel)]="data.field" [placeholder]="data.placeholder">
+  <p-footer>
+    <button pButton type="button" icon="pi pi-search" (click)="onNoClick()"></button>
+    <button pButton type="button" icon="pi pi-search" (click)="result(data)"></button>
+  </p-footer>
+</p-card>
+

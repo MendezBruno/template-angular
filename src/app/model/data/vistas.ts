@@ -33,4 +33,5 @@ export const ArrayVistas = [
     'login/user-password',
     'vistas/menus/menu-hamburguesa-adaptative',
     'vistas/menus/menu-side-bar',
+    'vistas/common-dialog-edit'
 ];

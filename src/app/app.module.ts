@@ -16,6 +16,7 @@ import { SubHeaderComponent } from './components/toolbars-materials/sub-header/s
 import { MainHeaderComponent } from './components/toolbars-materials/main-header/main-header.component';
 import { MenuComponent } from './components/menu/menu.component';
 
+// prime ng
 
 // material components
 import { UserComponent } from './vistas/forms/user/user.component';
@@ -56,7 +57,7 @@ import { VistaCanvasComponent } from './vistas/tests/vista-canvas/vista-canvas.c
 import { TurnButtonComponent } from './components/buttons/turn-button/turn-button.component';
 import { EffectsButtonComponent } from './components/buttons/effects-button/effects-button.component';
 import { MarketUnoComponent } from './vistas/cards/market-uno/market-uno.component';
-import { ScrollDispatchModule } from '@angular/cdk/scrolling'; 
+import { ScrollDispatchModule } from '@angular/cdk/scrolling';
 import { PortalModule } from '@angular/cdk/portal';
 import { VistaDinamicaComponent, ComponentPortalExample } from './cdk-components/vista-dinamica/vista-dinamica.component';
 import { ActionButtonComponent } from './cdk-components/vista-dinamica/action-button.component';
@@ -97,12 +98,16 @@ import {dosDecimalFormatDirective} from './directives/2decimales-format.directiv
 import {OnlyNumbersDirective} from './directives/only-numbers.directive';
 import { CalendariodosComponent } from './commons-components/calendariodos/calendariodos.component';
 import { ViewPanelOneComponent } from './vistas/principales/view-panel-one/view-panel-one.component';
+import { MarketCuatroComponent } from './vistas/cards/market-cuatro/market-cuatro.component';
+import {CardModule} from 'primeng/card';
+import {ButtonModule} from 'primeng/button';
+import {DynamicDialogDemoModuleModule} from './dynamic-dialog-demo-module/dynamic-dialog-demo-module.module';
 
 
 
 
 @NgModule({
-  entryComponents:[ActionButtonComponent, FaceGoogleComponent, SupportComponent],
+  entryComponents: [ ActionButtonComponent, FaceGoogleComponent, SupportComponent],
   declarations: [
     AppComponent,
     PrincipalComponent,
@@ -129,7 +134,7 @@ import { ViewPanelOneComponent } from './vistas/principales/view-panel-one/view-
     FormularioComponent,
     ItemDosComponent,
     FooterUnoComponent,
-    VideoComponent, 
+    VideoComponent,
     // Directivas
     FunctionSatisfyDirective,
     PriceFormaDirective,
@@ -191,9 +196,11 @@ import { ViewPanelOneComponent } from './vistas/principales/view-panel-one/view-
     BatterySizeComponent,
     CalendariodosComponent,
     ViewPanelOneComponent,
+    MarketCuatroComponent,
 
   ],
   imports: [
+    // angular modules
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
@@ -201,12 +208,19 @@ import { ViewPanelOneComponent } from './vistas/principales/view-panel-one/view-
     FlexLayoutModule,
     AppRoutingModule,
     ReactiveFormsModule,
+
+    // own modules
+    DynamicDialogDemoModuleModule,
     HttpModule,
     JsonpModule,
     ScrollDispatchModule,
+    // primeng modules
     PortalModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    // prime ng
+    CardModule,
+    ButtonModule
 
   ],
   providers: [CommunicationService],

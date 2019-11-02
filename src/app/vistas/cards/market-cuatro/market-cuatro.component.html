@@ -1,0 +1,33 @@
+<p-card [header]="publicacion.titulo" subheader="Subheader" [style]="{width: '360px'}" styleClass="ui-card-shadow">
+  <p-header>
+    <img [src]= "publicacion.fotos[0]">
+  </p-header>
+  <div>
+    <div style="width: 100%; height: 200">
+      <app-carusel *ngIf="true" [imagenes]="publicacion.fotos"></app-carusel>
+      <div class="line-separator"></div>
+    </div>
+
+    <p fxLayout="column">
+      <span>fecha: -- {{publicacion.fecha | date:'dd-MM-yyyy'}} </span>
+      <span class="editMode" (click) = "changeDescription(publicacion)">descripcion: {{publicacion.description}} </span>
+      <span class="editMode" (click) = "changePrecio(publicacion)">precio: {{publicacion.precio}}</span>
+      <span class="editMode" (click) = "changeCantidad(publicacion)">cantidad: {{publicacion.cantidad}}   {{publicacion.tipoCantidad}} </span>
+      <span class="editMode" (click) = "changeStock(publicacion)">stock: {{publicacion.stock}}</span>
+    </p>
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <!-- <button fxFlex="20" mat-button>{{ publicacion.activada ? 'Desactivar': 'Activar'}}</button> -->
+      <mat-slide-toggle (change)="changeActiveState($event.checked, publicacion) "> </mat-slide-toggle>
+      <span fxFlex="10" ></span>
+      <p fxFlex="70">{{ publicacion.activada ? 'ACTIVADA': 'DESACTIVADA'}}</p>
+    </div>
+  </div>
+  <p-footer>
+    <button pButton type="button" [disabled]="!isEdit(publicacion)" (click)="saveChangesPublication(publicacion)"></button>
+    <!-- <mat-button-toggle pButton type=button (change)="changeEditState($event.checked, publicacion)" ><mat-icon >mode_edit</mat-icon></mat-button-toggle> -->
+    <button pButton type="button" (click) = "updatePhotoPublication(publicacion)" ><mat-icon >photo</mat-icon></button>
+    <button pButton type="button" (click) = "deletePublication(publicacion)" ><mat-icon >delete</mat-icon></button>
+    <button pButton type="button" label="Save" icon="pi pi-check" style="margin-right: .25em"></button>
+    <button pButton type="button" label="Cancel" icon="pi pi-times" class="ui-button-secondary"></button>
+  </p-footer>
+</p-card>
