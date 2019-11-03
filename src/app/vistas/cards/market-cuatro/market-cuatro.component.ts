@@ -11,8 +11,6 @@ import {EditPublicationComponent} from '../../../dynamic-dialog-demo-module/comm
 export class MarketCuatroComponent implements OnInit {
 
   publicacion: Publicacion;
-
-  imagenes: any;
   editStates: EditState[] = [];
   publicaciones: Publicacion[];
   currentPhoto = 0;

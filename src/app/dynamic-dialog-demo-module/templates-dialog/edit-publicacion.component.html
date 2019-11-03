@@ -3,10 +3,16 @@
     <h2>Cambiar</h2>
     <h3>Escriba o elija el nuevo elemento para mostrar en la publicacion</h3>
   </p-header>
+  <div [ngSwitch]="data?.typeEdition">
+    <input *ngSwitchCase="'text'" type="text" pInputText [(ngModel)]="data.field" [placeholder]="data.placeholder">
+    <p-calendar *ngSwitchCase="'date'" [(ngModel)]="data.field"></p-calendar>
+    <p-dropdown *ngSwitchCase="'dropdown'" [options]="data?.options" [(ngModel)]="data.field" placeholder="Select a option" optionLabel="name" [showClear]="true"></p-dropdown>
+    <input *ngSwitchCase="'num'" type="text" pInputText [(ngModel)]="data.field" [placeholder]="data.placeholder">
+  </div>
   <input type="text" pInputText [(ngModel)]="data.field" [placeholder]="data.placeholder">
   <p-footer>
-    <button pButton type="button" icon="pi pi-search" (click)="onNoClick()"></button>
-    <button pButton type="button" icon="pi pi-search" (click)="result(data)"></button>
+    <button pButton type="button" icon="pi pi-close" (click)="onNoClick()" label="Cancelar" class="ui-button-secondary"></button>
+    <button pButton type="button" icon="pi pi-check" (click)="result(data)" label="Modificar"></button>
   </p-footer>
 </p-card>
 

@@ -19,7 +19,7 @@ export class CarruselComponent implements OnInit {
   ];
 
   constructor() {
-    // this.imagenes =  this.ImagesDummy;
+    this.imagenes =  this.ImagesDummy;
   }
 
   ngOnInit() {

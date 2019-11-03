@@ -7,8 +7,9 @@ import { DynamicDialogComponent } from './dynamic-dialog/dynamic-dialog.componen
 import { CommonDialogComponent } from './common-dialog/common-dialog.component';
 import { EditPublicationComponent } from './common-dialog/common-dialog.component';
 import {CardModule} from 'primeng/card';
-import {InputTextModule} from 'primeng/primeng';
+import {CalendarModule, DropdownModule, InputTextModule} from 'primeng/primeng';
 import {FormsModule} from '@angular/forms';
+import {ToastModule} from 'primeng/toast';
 
 
 
@@ -21,7 +22,10 @@ import {FormsModule} from '@angular/forms';
     ButtonModule,
     CardModule,
     InputTextModule,
-    FormsModule
+    FormsModule,
+    ToastModule,
+    CalendarModule,
+    DropdownModule
   ],
   declarations: [
     EditPublicationComponent,

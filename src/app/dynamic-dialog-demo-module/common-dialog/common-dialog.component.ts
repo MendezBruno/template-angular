@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DynamicDialogConfig, DynamicDialogRef} from 'primeng/api';
+import {DataDialog} from './model';
 
 @Component({
   selector: 'app-common-dialog',
@@ -26,14 +27,14 @@ export class CommonDialogComponent implements OnInit {
 })
 export class EditPublicationComponent implements OnInit {
 
-  data: any;
+  data: DataDialog;
   constructor(public ref: DynamicDialogRef, public config: DynamicDialogConfig) { }
 
   ngOnInit() {
     this.data = this.config.data;
   }
 
-  result(result: any) {
+  result(result: DataDialog) {
     this.ref.close(result);
   }
 
