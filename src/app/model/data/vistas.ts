@@ -5,6 +5,7 @@ export const ArrayVistas = [
     'commons-components/list-items',
     'components/toolbars/stick-toolbar',
     'components/toolbars/simple-stick-toolbar',
+    'components/toolbars/toolbar-responsive',
     'vistas/forms/product',
     'vistas/forms/user',
     'vistas/forms/turnos',

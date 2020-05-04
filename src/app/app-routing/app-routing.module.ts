@@ -37,6 +37,7 @@ import { PortfolioOneComponent } from '../vistas/portfolios/portfolio-one/portfo
 import { CalendariodosComponent } from '../commons-components/calendariodos/calendariodos.component';
 import { ViewPanelOneComponent } from '../vistas/principales/view-panel-one/view-panel-one.component';
 import { DynamicDialogComponent } from '../dynamic-dialog-demo-module/dynamic-dialog/dynamic-dialog.component';
+import { ToolResponsiveOneComponent } from '../components/toolbars/tool-responsive-one/tool-responsive-one.component';
 
 
 const appRoutes: Routes = [
@@ -48,6 +49,7 @@ const appRoutes: Routes = [
   { path: 'commons-components/list-items', component: ListItemsComponent },
   { path: 'components/toolbars/simple-stick-toolbar', component: SimpleStickToolbarComponent },
   { path: 'components/toolbars/stick-toolbar', component: StickToolbarComponent },
+  { path: 'components/toolbars/toolbar-responsive', component: ToolResponsiveOneComponent },
   { path: 'vistas/cards/market-uno', component: MarketUnoComponent},
   { path: 'vistas/cards/market-dos', component: MarketDosComponent},
   { path: 'vistas/cards/market-tres', component: MarketTresComponent},

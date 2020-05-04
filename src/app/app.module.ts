@@ -102,6 +102,7 @@ import { MarketCuatroComponent } from './vistas/cards/market-cuatro/market-cuatr
 import {CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
 import {DynamicDialogDemoModuleModule} from './dynamic-dialog-demo-module/dynamic-dialog-demo-module.module';
+import { ToolResponsiveOneComponent } from './components/toolbars/tool-responsive-one/tool-responsive-one.component';
 
 
 
@@ -197,6 +198,7 @@ import {DynamicDialogDemoModuleModule} from './dynamic-dialog-demo-module/dynami
     CalendariodosComponent,
     ViewPanelOneComponent,
     MarketCuatroComponent,
+    ToolResponsiveOneComponent,
 
   ],
   imports: [
