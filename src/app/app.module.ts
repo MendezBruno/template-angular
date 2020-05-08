@@ -103,6 +103,7 @@ import {CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
 import {DynamicDialogDemoModuleModule} from './dynamic-dialog-demo-module/dynamic-dialog-demo-module.module';
 import { ToolResponsiveOneComponent } from './components/toolbars/tool-responsive-one/tool-responsive-one.component';
+import { DashboardOneComponent } from './vistas/dashboard/dashboard-one/dashboard-one.component';
 
 
 
@@ -199,6 +200,7 @@ import { ToolResponsiveOneComponent } from './components/toolbars/tool-responsiv
     ViewPanelOneComponent,
     MarketCuatroComponent,
     ToolResponsiveOneComponent,
+    DashboardOneComponent,
 
   ],
   imports: [

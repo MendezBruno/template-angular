@@ -38,6 +38,7 @@ import { CalendariodosComponent } from '../commons-components/calendariodos/cale
 import { ViewPanelOneComponent } from '../vistas/principales/view-panel-one/view-panel-one.component';
 import { DynamicDialogComponent } from '../dynamic-dialog-demo-module/dynamic-dialog/dynamic-dialog.component';
 import { ToolResponsiveOneComponent } from '../components/toolbars/tool-responsive-one/tool-responsive-one.component';
+import { DashboardOneComponent } from '../vistas/dashboard/dashboard-one/dashboard-one.component';
 
 
 const appRoutes: Routes = [
@@ -79,6 +80,7 @@ const appRoutes: Routes = [
   { path: 'login/face-google', component: FaceGoogleComponent },
   { path: 'login/login-admin', component: LoginAdminComponent },
   { path: 'login/user-password', component: UserPasswordComponent },
+  { path: 'vistas/dashboard/dashboard-one', component: DashboardOneComponent }
 
 ];
 
